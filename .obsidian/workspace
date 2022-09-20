@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "a0aabe96f1b93312",
+    "type": "split",
+    "children": [
+      {
+        "id": "9dd9c6968bbe4cc0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Setting the HTTP Port.md",
+            "mode": "preview",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4594d2c9285e6a7a",
+    "type": "split",
+    "children": [
+      {
+        "id": "416aaed5d1bf0aeb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffda0a26d9982b85",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7d27199bbd83bc96",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#ASP_NET/Platform",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "02079d3ef972378e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "199da9ee5de9fd55",
+    "type": "split",
+    "children": [
+      {
+        "id": "bee69160fad148a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b73e6d693311756",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Setting the HTTP Port.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "3d8971b6177c78c1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Setting the HTTP Port.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ebbdbf328546638e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a9cf68973c2fd8cc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Setting the HTTP Port.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "9dd9c6968bbe4cc0",
+  "lastOpenFiles": [
+    "ASP.NET Configuration.md",
+    "ASP.NET Platform.md",
+    "Views.md",
+    "Strating .NET application.md",
+    "NET SDK.md",
+    "Controllres and Actions.md",
+    "Routes.md",
+    "ASP.NET MVC.md",
+    "ASP.NET Structure.md",
+    "TOC - Putting ASP.NET Core in Context.md"
+  ]
+}

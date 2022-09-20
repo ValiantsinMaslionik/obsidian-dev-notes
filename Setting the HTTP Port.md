@@ -1,0 +1,38 @@
+HTTP port to accept incoming connections is defined by the _applicationUrl_ property
+
+```
+{
+	"iisSettings": {
+		"windowsAuthentication": false,
+		"anonymousAuthentication": true,
+		"iisExpress": {
+			"applicationUrl": "http://localhost:5000",
+			"sslPort": 0
+		}
+	},
+	"profiles": {
+		"FirstProject": {
+			"commandName": "Project",
+			"dotnetRunMessages": true,
+			"launchBrowser": true,
+			"applicationUrl": "http://localhost:5000",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}	
+	},
+	"IIS Express": {
+		"commandName": "IISExpress",
+		"launchBrowser": true,
+		"environmentVariables": {
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		}
+	}
+}
+```
+
+- FirstProject - the name of the web application (dll or exe)
+
+---
+
+[[ASP.NET Configuration]]
