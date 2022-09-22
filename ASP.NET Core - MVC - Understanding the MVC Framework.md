@@ -1,3 +1,7 @@
+#ASP_NET_CORE/MVC 
+
+---
+
 The MVC Framework was introduced in the early ASP.NET, long before .NET Core and .NET 6 were  
 introduced. The original ASP.NET relied on a development model called Web Pages, which re-created the  
 experience of writing desktop applications but resulted in unwieldy web projects that did not scale well.  
@@ -18,7 +22,3 @@ request and receives an HTML document that delivers a rich client, typically wri
 such as Angular or React. The shift to SPAs means that the clean separation that the MVC Framework was  
 originally intended for is not as important, and the emphasis placed on following the MVC pattern is no  
 longer essential, even though the MVC Framework remains useful.
-
----
-
-[[ASP.NET MVC]]

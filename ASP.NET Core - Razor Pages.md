@@ -1,3 +1,7 @@
+#ASP_NET_CORE/Razor_Pages
+
+---
+
 ==One drawback of the MVC Framework is that it can require a lot of preparatory work before an application
 can start producing content.== Despite its structural problems, one advantage of Web Pages was that simple
 applications could be created in a couple of hours.
@@ -11,7 +15,3 @@ this re-creates the speed of Web Pages development without some of the underlyin
 main parts of the application using the MVC Framework and use Razor Pages for the secondary features,
 such as administration and reporting tools. You can see this approach in Chapters 7–11 #TODO/AddLink, where I develop a
 realistic ASP.NET Core application called SportsStore.
-
----
-
-[[ASP.NET Platform]]

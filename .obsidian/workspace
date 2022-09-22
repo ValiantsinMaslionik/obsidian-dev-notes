@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "9dd9c6968bbe4cc0",
+        "id": "70830a63664bcaef",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Setting the HTTP Port.md",
+            "file": "NET Core - Strating .NET application.md",
             "mode": "preview",
             "source": true
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ASP_NET/Platform",
+                "query": "tag:#ASP_NET_CORE/MVC",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Setting the HTTP Port.md",
+                "file": "NET Core - Strating .NET application.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Setting the HTTP Port.md",
+                "file": "NET Core - Strating .NET application.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Setting the HTTP Port.md"
+                "file": "NET Core - Strating .NET application.md"
               }
             }
           }
@@ -129,17 +128,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9dd9c6968bbe4cc0",
+  "active": "70830a63664bcaef",
   "lastOpenFiles": [
-    "ASP.NET Configuration.md",
-    "ASP.NET Platform.md",
-    "Views.md",
-    "Strating .NET application.md",
-    "NET SDK.md",
-    "Controllres and Actions.md",
-    "Routes.md",
-    "ASP.NET MVC.md",
-    "ASP.NET Structure.md",
-    "TOC - Putting ASP.NET Core in Context.md"
+    "ASP.NET Core - Structure.md",
+    "ASP.NET Core - MVC - Understanding the MVC Framework.md",
+    "zIMG - ASP.NET - aspnet-structure.png",
+    "NET Core - Strating .NET application.md",
+    "NET Core - Installing .NET SDK.md",
+    "NET Core - Creating an ASP.NET Core Project and Solution.md",
+    "git - push using different credentials.md",
+    "ASP.NET Core - Use multiple environments.md",
+    "ASP.NET Core - Razor Pages.md",
+    "ASP.NET Core - MVC - Views.md"
   ]
 }

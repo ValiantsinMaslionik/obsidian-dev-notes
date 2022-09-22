@@ -1,4 +1,4 @@
-#ASP_NET/Blazor
+#ASP_NET_CORE/Blazor
 
 ---
 
@@ -16,7 +16,3 @@ to the ASP.NET Core server, where the application’s C# code is executed.
 #Term/Blazor_WebAssembly is an experimental release that goes one step further and executes the application’s C# code 
 in the browser. Neither version of Blazor is suited for all situations, as I explain in Chapter 33 #TODO/AddLink, but they 
 both give a sense of direction for the future of ASP.NET Core development.
-
----
-
-[[ASP.NET Platform]]

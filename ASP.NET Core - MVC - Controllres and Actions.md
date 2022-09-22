@@ -1,4 +1,8 @@
-The [[Endpoints#^a65bd6|endpoint]] that may produce the response is an _#Term/action_, which is a method that is written in C#. 
+#ASP_NET_CORE/MVC
+
+---
+
+The [[ASP.NET Core - Endpoints#^a65bd6|endpoint]] that may produce the response is an _#Term/action_, which is a method that is written in C#. 
 
 An action is defined in a _#Term/controller_, which is a C# class that is derived from the _Microsoft.AspNetCore.Mvc.Controller_
 class, the built-in controller base class. Each public method defined by a controller is an action, which means you can invoke 
@@ -38,7 +42,3 @@ public class HomeController : Controller {
 	}
 }
 ```
-
----
-
-[[ASP.NET MVC]]
