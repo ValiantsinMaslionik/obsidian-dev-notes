@@ -193,7 +193,7 @@ the input element sets the id and name elements. This may not look especially us
 associating elements with a model property offers additional advantages as the application functionality is defined.
 
 Of more immediate use is the asp-action attribute applied to the form element, which uses the application’s
-[[ASP.NET Core - MVC - Routes|URL routing]] configuration to set the action attribute to a URL that will target a specific [[ASP.NET Core - MVC - Controllres and Actions#^8ffa5d|action]] method, like this:
+[[ASP.NET Core - URL Routing|URL routing]] configuration to set the action attribute to a URL that will target a specific [[ASP.NET Core - MVC - Controllres and Actions#^8ffa5d|action]] method, like this:
 ```
 <form method="post" action="/Home/RsvpForm">
 ```

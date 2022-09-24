@@ -4,7 +4,7 @@
 
 [Environments](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-6.0)
 [[#Development and launchSettings json]]
-[[#Setting the HTTP port]]
+[[#Selecting the HTTP Port]]
 
 ### Development and launchSettings.json
 
@@ -18,7 +18,7 @@ The `launchSettings.json` file:
 -   Is not deployed.
 -   Contains profile settings.
  
-## Setting the HTTP port
+## Selecting the HTTP Port
 
 #### Locally, via [launchSettings.json](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-6.0#development-and-launchsettingsjson)
 
