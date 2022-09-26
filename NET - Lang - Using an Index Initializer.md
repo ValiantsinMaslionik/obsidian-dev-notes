@@ -2,7 +2,7 @@
 
 ---
 
-```
+```csharp
 namespace LanguageFeatures.Controllers 
 {
 	public class HomeController : Controller 

@@ -5,7 +5,8 @@
 The repository pattern is one of the most widely used, and it provides a consistent way to access the features presented by the
 database context class. Not everyone finds a repository useful, but my experience is that it can reduce
 duplication and ensures that operations on the database are performed consistently.
-```
+
+```cs
 namespace SportsStore.Models 
 {
 	public interface IStoreRepository 
@@ -14,6 +15,7 @@ namespace SportsStore.Models
 	}
 }
 ```
+
 This interface uses _IQueryable&gt;T&lt;_ to allow a caller to obtain a sequence of Product objects. The
 _IQueryable&gt;T&lt;_ interface is derived from the more familiar _IQueryable&gt;T&lt;_ interface and represents a
 collection of objects that can be queried, such as those managed by a database.
@@ -22,7 +24,8 @@ know the details of how they are stored or how the implementation class will del
 
 To create an implementation of the repository interface, add a class file named EFStoreRepository.cs
 in the Models folder and use it to define the class shown in Listing 7-19.
-```
+
+```cs
 namespace SportsStore.Models 
 {
 	public class EFStoreRepository : IStoreRepository 
@@ -37,12 +40,14 @@ namespace SportsStore.Models
 	}
 }
 ```
+
 I’ll add additional functionality as I add features to the application, but for the moment, the repository
 implementation just maps the Products property defined by the IStoreRepository interface onto the
 Products property defined by the StoreDbContext class. The Products property in the context class returns
 a _DbSet&gt;Product&lt;_ object, which implements the _IQueryable&gt;T&lt;_ interface and makes it easy to implement
 the repository interface when using Entity Framework Core.
-```
+
+```cs
 using Microsoft.EntityFrameworkCore;
 using SportsStore.Models;
 
@@ -62,5 +67,6 @@ app.MapDefaultControllerRoute();
 
 app.Run();
 ```
+
 > The AddScoped method creates a service where each HTTP request gets its own repository object, which
 > is the way that Entity Framework Core is typically used.

@@ -2,17 +2,12 @@
 
 ---
 
-[[#Overview]]
-[[#Dynamic Output]]
-[[#Linking Action Methods]]
-[[#Building the Form]]
-
 ## Overview
 
 To produce an HTML response to a browser request, I need a _#Term/view_, which tells ASP.NET Core how to process the result
 produced by the Index method into an HTML response that can be sent to the browser.
 
-```
+```cs
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstProject.Controllers {
@@ -32,7 +27,7 @@ which is MyView.
 Views that are associated with the Home controller, for example, are stored in a folder called Views/Home.
 Views that are not specific to a single controller are stored in a folder called Views/Shared.
 
-```
+```html
 @{
 	Layout = null;
 }
@@ -60,7 +55,7 @@ in views are known as _#Term/Razor/Expression_ (_Razor Expressions_).
 
 ## Dynamic Output
 
-```
+```cs
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstProject.Controllers {
@@ -73,7 +68,7 @@ namespace FirstProject.Controllers {
 	}
 }
 ```
-```
+```html
 @model string
 
 @{
@@ -102,7 +97,7 @@ The view model value is included in the HTML output using the _@Model_ expressio
 I want to be able to create a link from the Index view so that guests can see the RsvpForm view without having
 to know the URL that targets a specific action method
 
-```
+```html
 @{
 	Layout = null;
 }
@@ -133,7 +128,7 @@ URL for an action method defined by the same controller for which the current vi
 
 ## Building the Form
 
-```
+```html
 @model PartyInvites.Models.GuestResponse
 
 @{
@@ -177,11 +172,9 @@ The @model expression specifies that the view expects to receive a GuestResponse
 model. I have defined a label and input element for each property of the GuestResponse model class (or, in
 the case of the WillAttend property, a select element). 
 
-Each element is associated with the model property using the #Term/Razor/TagHelper/asp-for  (_asp-for_) attribute, which is another tag helper attribute. 
-The tag helper attributes configure the elements to tie them to the view model object. 
-
+Each element is associated with the model property using the #Term/Razor/TagHelper/asp-for  (_asp-for_) attribute, which is another tag helper attribute. The tag helper attributes configure the elements to tie them to the view model object. 
 Here is an example of the HTML that the tag helpers produce:
-```
+```html
 <p>
 	<label for="Name">Your name:</label>
 	<input type="text" id="Name" name="Name" value="">
@@ -193,8 +186,8 @@ the input element sets the id and name elements. This may not look especially us
 associating elements with a model property offers additional advantages as the application functionality is defined.
 
 Of more immediate use is the asp-action attribute applied to the form element, which uses the application’s
-[[ASP.NET Core - URL Routing|URL routing]] configuration to set the action attribute to a URL that will target a specific [[ASP.NET Core - MVC - Controllres and Actions#^8ffa5d|action]] method, like this:
-```
+[[ASP.NET Core - Routing|URL routing]] configuration to set the action attribute to a URL that will target a specific [[ASP.NET Core - MVC - Controllres and Actions#^8ffa5d|action]] method, like this:
+```html
 <form method="post" action="/Home/RsvpForm">
 ```
 

@@ -4,16 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "fa354a69dcb2b940",
+        "id": "b7d67c49ff1672d5",
         "type": "leaf",
+        "dimension": 65.62680531484692,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NET - Expression trees.md",
-            "mode": "preview",
+            "file": "ASP.NET Core - DI - Using DI.md",
+            "mode": "source",
             "source": true
           }
-        }
+        },
+        "group": "d659bb7409ece795"
+      },
+      {
+        "id": "6a2d8f8d3d36266d",
+        "type": "leaf",
+        "dimension": 34.37319468515309,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "ASP.NET Core - DI - Using DI.md"
+          }
+        },
+        "group": "d659bb7409ece795"
       }
     ],
     "direction": "vertical"
@@ -40,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ASP_NET_CORE/Blazor",
+                "query": "tag:#NET/Platform/Delegates",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NET - Expression trees.md",
+                "file": "ASP.NET Core - DI - Using DI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NET - Expression trees.md",
+                "file": "ASP.NET Core - DI - Using DI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NET - Expression trees.md"
+                "file": "ASP.NET Core - DI - Using DI.md"
               }
             }
           }
@@ -128,17 +142,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "fa354a69dcb2b940",
+  "active": "b7d67c49ff1672d5",
   "lastOpenFiles": [
-    "NET - Lang - Selecting the right nullable type.md",
-    "NET - Expression trees.md",
+    "ASP.NET Core - DI.md",
     "Abbreviations.md",
-    "NET - Libraries.md",
-    "ASP.NET Core - Blazor.md",
-    "Untitled 1.md",
+    "NET Core - dotnet cli.md",
+    "NET - TPL - Tips and Tricks.md",
+    "NET - Performance - Reflection.md",
+    "NET - Net - HttpListener.md",
     "NET - LINQ - IQuerable_T.md",
+    "NET - Libraries.md",
     "NET - Lang - Using the Null-Coalescing Operator.md",
-    "NET - Lang - Using an Index Initializer.md",
-    "NET Core - Lang - Using an Asynchronous Enumerable.md"
+    "NET - Lang - Using an Index Initializer.md"
   ]
 }

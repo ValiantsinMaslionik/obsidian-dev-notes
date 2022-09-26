@@ -2,11 +2,11 @@
 
 ---
 
-[[#Settings connection string]]
-
 ## Settings connection string
+
 __appsettings.json__
-```
+
+```json
 {
 	"Logging": {
 		"LogLevel": {
@@ -20,4 +20,5 @@ __appsettings.json__
 	}
 }
 ```
-> Whole connection string must be placed on the single line!
+
+>![[zICO - Warning - 16.png]] Whole connection string must be placed on the single line!

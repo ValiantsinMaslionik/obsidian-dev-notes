@@ -2,12 +2,15 @@
 
 ---
 
-### Installing the #Term/Bootstrap CSS Framework
+## Installing the Bootstrap CSS Framework
+
 `libman install bootstrap@5.1.3 -d wwwroot/lib/bootstrap`
+
 > The -d argument specifies the location into which the package is installed.
 
-### Applying Bootstrap Classes
-```
+## Applying Bootstrap Classes
+
+```html
 <!DOCTYPE html>
 <html>
 	<head>

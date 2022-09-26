@@ -4,14 +4,6 @@
 
 ![[zIMG - ASP.NET - aspnet-structure.png]]
 
-[[#MVC Framework]]
-[[#Understanding Razor Pages]]
-[[#Understanding Blazor]]
-[[#Understanding the Utility Frameworks]]
-[[#Understanding the ASP NET Core Platform]]
-[[#SignalR]]
-[[#gRPC]]
-
 ## MVC Framework
 
 The MVC Framework was introduced in the early ASP.NET, long before .NET Core and .NET 6 were  

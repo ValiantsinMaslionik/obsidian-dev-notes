@@ -2,11 +2,11 @@
 
 ---
 
-[Environments](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-6.0)
-[[#Development and launchSettings json]]
-[[#Selecting the HTTP Port]]
+## Links
 
-### Development and launchSettings.json
+[Environments](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-6.0)
+
+## Development and launchSettings.json
 
 The development environment can enable features that shouldn't be exposed in production. For example, the ASP.NET Core project templates enable the [Developer Exception Page](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-6.0#developer-exception-page) in the development environment.
 
@@ -20,11 +20,13 @@ The `launchSettings.json` file:
  
 ## Selecting the HTTP Port
 
-#### Locally, via [launchSettings.json](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-6.0#development-and-launchsettingsjson)
+### Locally 
+
+Using [launchSettings.json](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-6.0#development-and-launchsettingsjson)
 
 The following JSON shows the `launchSettings.json` file for an ASP.NET Core web project named _EnvironmentsSample_
 
-```
+```json
 {
 	"iisSettings": {
 		"windowsAuthentication": false,
@@ -55,9 +57,11 @@ The following JSON shows the `launchSettings.json` file for an ASP.NET Core we
 }
 ```
 
-#### Globally, via _appsettings.json_ #TODO/AddLink 
+### Globally
 
-```
+Uisng _appsettings.json_ #TODO/AddLink 
+
+```json
 {
     "Kestrel": {
         "EndPoints": {

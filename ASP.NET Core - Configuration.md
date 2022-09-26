@@ -2,7 +2,7 @@
 
 ---
 
-[Configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0)
+[Learn](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0)
 
 Configuration providers read configuration data from key-value pairs using a variety of configuration sources:
 

@@ -5,7 +5,7 @@
 The ASP.NET Core project templates enable a feature named implicit usings, which define global using
 statements for these commonly required namespaces:
 
-```
+```txt
 System
 System.Collections.Generic
 System.IO
@@ -24,6 +24,6 @@ Microsoft.Extensions.Hosting
 Microsoft.Extensions.Logging
 ```
 
-using statements are not required for these namespaces, which are available throughout the
+_using_ statements are not required for these namespaces, which are available throughout the
 application. These namespaces don’t cover all of the ASP.NET Core features, but they do cover the basics,
 which is why no explicit using statements are required in the Program.cs file, for example.

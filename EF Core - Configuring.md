@@ -5,7 +5,8 @@
 Entity Framework Core must be configured so that it knows the type of database to which it will connect,
 which connection string describes that connection, and which context class will present the data in the
 database. Listing 7-17 shows the required changes to the Program.cs file.
-```
+
+```cs
 using Microsoft.EntityFrameworkCore;
 using SportsStore.Models;
 

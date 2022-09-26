@@ -2,10 +2,9 @@
 
 ---
 
-[[#View model test]]
-
 ## View model test
-```
+
+```cs
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using SimpleApp.Controllers;

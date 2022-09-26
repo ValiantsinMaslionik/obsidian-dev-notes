@@ -8,14 +8,14 @@ An action is defined in a _#Term/controller_, which is a C# class that is derive
 class, the built-in controller base class. Each public method defined by a controller is an action, which means you can invoke 
 the action method to handle an HTTP request.  ^8ffa5d
 
-> The convention in ASP.NET Core projects is to put controller classes in a
-folder named Controllers, which was created by the template used to set up the project.
+>The convention in ASP.NET Core projects is to put controller classes in a
+>folder named Controllers, which was created by the template used to set up the project.
 
 The project template added a controller to the Controllers folder to help jump-start development.  Controller classes contain 
 a name followed by the word _Controller_, which means that when you see a file called HomeController.cs, you know that it
 contains a controller called Home, which is the default controller that is used in ASP.NET Core applications.
 
-```
+```cs
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using FirstProject.Models;

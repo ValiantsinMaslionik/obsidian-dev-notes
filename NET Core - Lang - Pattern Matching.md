@@ -2,9 +2,6 @@
 
 ---
 
-[[#Type matching]]
-[[#Pattern Matching in switch Statements]]
-
 One of the most useful recent additions to C# is support for pattern matching, which can be used to test that
 an object is of a specific type or has specific characteristics. This is another form of syntactic sugar, and it can
 dramatically simplify complex blocks of conditional statements.
@@ -12,7 +9,8 @@ dramatically simplify complex blocks of conditional statements.
 ## Type matching
 
 The is keyword is used to perform a type test
-```
+
+```cs
 namespace LanguageFeatures.Controllers 
 {
 	public class HomeController : Controller 
@@ -38,7 +36,8 @@ namespace LanguageFeatures.Controllers
 
 Pattern matching can also be used in switch statements, which support the when keyword for restricting
 when a value is matched by a case statement.
-```
+
+```cs
 namespace LanguageFeatures.Controllers 
 {
 	public class HomeController : Controller 

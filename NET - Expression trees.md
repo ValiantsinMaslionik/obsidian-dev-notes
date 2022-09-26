@@ -1,21 +1,16 @@
-#NET/Lang 
+#NET/Platform/ExpressionTrees
 
 ---
 
-[Microdoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/)
+## Links
 
-[[#Implementing generic operators]]
-[[#Executing DSLs]]
-[[#Obtaining ET from lambdas https learn microsoft com en-us dotnet csharp programming-guide concepts expression-trees creating-expression-trees-from-lambda-expressions|Obtaining ET from lambdas]]
-[[#Identifying type members]]
-[[#Preserving source code in assertions]]
-[[#Traversion and re-writing ETs]]
-[[#Transplitting code into a different language]]
+[Microdoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/)
+[Working with Expression Trees In C#](zDOC_NET-Working-with-Expression-Trees.mhtml)
 [[NET - Performance - Reflection|Optimizing Reflection performance]]
 
 ## Implementing generic operators
 
-```
+```csharp
 public static class ThreeFourths 
 { 
 	private static class Impl<T> 
@@ -46,8 +41,10 @@ public static class ThreeFourths
 
 ## Executing DSLs
 
-Implementing simple calculator that can pasre expression from a string (using [[NET - Libraries|sprache]] library)
-```
+Implementing simple calculator that can pasre expression from a string (using [[NET - Libraries|sprache]] library).
+Also, there is a faster version of the .Compile() method provided by the [[NET - Libraries|FastExpressionCompiler]] library.
+
+```csharp
 public static class SimpleCalculator 
 { 
 	private static readonly Parser<Expression> Constant = 
@@ -82,9 +79,11 @@ var b = SImpleCalculator.Run("3.15 * 5 + 2"); // 17.75
 var c = SImpleCalculator.Run("1 / 2 * 3"); // 1.5
 ```
 
-## Obtaining ET from lambdas [>](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/#creating-expression-trees-from-lambda-expressions)
+## Obtaining ET from lambdas
 
-```
+[Learm](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/#creating-expression-trees-from-lambda-expressions)
+
+```csharp
 Expression<Func<int, int, int>> divExpr = (a, b) => a / b;`
 var divFunc = divExpr.Compile();
 var c = divFunc(10, 5); // 2
@@ -93,12 +92,12 @@ var c = divFunc(10, 5); // 2
 ### Limitations
 
 - Only direct lambda is allowed
-```
+```csharp
 Func<int, int, int> divFunc = (a, b) => a / b;
 Expression<Func<int, int, int>> divExpr = divFunc; // Error
 ```
 - Code block is not allowed
-```
+```csharp
 Expression<Func<int, int, int>> divExpr = (a, b) => // Error
 {
 	var x = a / b;
@@ -107,18 +106,17 @@ Expression<Func<int, int, int>> divExpr = (a, b) => // Error
 };
 ```
 - Other limitations
-
 ![[zIMG-NET-expressiontree-from-lambda-limitations.png]]
 
 ## Identifying type members
 
 ![[zIMG-NET-expressiontree-identify-type-members-01.png]]
 
-Possible solution using reflection
+### Possible solution using reflection
 
 ![[zIMG-NET-expressiontree-identify-type-members-02.png]]
 
-Solution using ET
+### Solution using ET
 
 ![[zIMG-NET-expressiontree-identify-type-members-03.png]]
 
@@ -128,13 +126,13 @@ Let's imagine that we want to see source code that failed assertion insted of a 
 
 ![[zIMG-NET-expressiontree-get-source-code-01.png]]
 
-Solution
+### Solution
 
 > .ToReadableString() - extension method provided by the [[NET - Libraries|ReadableExpressions]] library
 
 ![[zIMG-NET-expressiontree-get-source-code-02.png]]
 
-Outcome
+### Outcome
 
 ![[zIMG-NET-expressiontree-get-source-code-03.png]]
 
@@ -158,11 +156,11 @@ Something like this
 
 ![[zIMG-NET-expressiontree-expressionvisitor-transplitting-01.png]]
 
-Possible implementation
+### Possible implementation
 
 ![[zIMG-NET-expressiontree-expressionvisitor-transplitting-02.png]]
 ![[zIMG-NET-expressiontree-expressionvisitor-transplitting-03.png]]
 
-Outcome
+### Outcome
 
 ![[zIMG-NET-expressiontree-expressionvisitor-transplitting-04.png]]

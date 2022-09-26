@@ -8,7 +8,7 @@ the Program.cs file in the example project:
 
 > This file contains only top-level statements. 
 
-```
+```cs
 // This method is responsible for setting up the basic features of the ASP.NET Core platform, including
 // creating services responsible for configuration data and logging, both of which are described in Chapter 15.
 // This method also sets up the HTTP server, named Kestrel, that is used to receive HTTP requests.
@@ -36,14 +36,14 @@ function responds to all requests by returning a simple string response
 Even though the function used with the MapGet method returns a string, ASP.NET Core is clever enough
 to create a valid HTTP response that will be understood by browsers. 
 
-#ASP_NET_CORE/PowerShell
-
 While ASP.NET Core is still running, open a new PowerShell command prompt and run the command shown 
 to send an HTTP request to the ASP.NET Core server.
 
-`(Invoke-WebRequest http://localhost:5000).RawContent`
-
+```ps1
+(Invoke-WebRequest http://localhost:5000).RawContent`
 ```
+
+```text
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Content-Type: text/plain; charset=utf-8

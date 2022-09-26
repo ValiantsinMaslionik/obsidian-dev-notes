@@ -7,7 +7,7 @@ it right, and there are times when you have a better understanding of whether a 
 compiler. In these situations, the _null-forgiving operator_ (!) can be used to tell the compiler that a variable isn’t
 null, regardless of what the null state analysis suggests
 
-```
+```cs
 namespace LanguageFeatures.Controllers 
 {
 	public class HomeController : Controller 
