@@ -6,28 +6,28 @@
       {
         "id": "b7d67c49ff1672d5",
         "type": "leaf",
-        "dimension": 65.62680531484692,
+        "dimension": 71.80820335066436,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "ASP.NET Core - DI - Using DI.md",
-            "mode": "source",
+            "file": "ASP.NET Core - Confoguration - Configuration Service.md",
+            "mode": "preview",
             "source": true
           }
         },
-        "group": "d659bb7409ece795"
+        "group": "1e5bb2f3799db247"
       },
       {
-        "id": "6a2d8f8d3d36266d",
+        "id": "d444d010707548f2",
         "type": "leaf",
-        "dimension": 34.37319468515309,
+        "dimension": 28.191796649335643,
         "state": {
           "type": "outline",
           "state": {
-            "file": "ASP.NET Core - DI - Using DI.md"
+            "file": "ASP.NET Core - Confoguration - Configuration Service.md"
           }
         },
-        "group": "d659bb7409ece795"
+        "group": "1e5bb2f3799db247"
       }
     ],
     "direction": "vertical"
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASP.NET Core - DI - Using DI.md",
+                "file": "ASP.NET Core - Confoguration - Configuration Service.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASP.NET Core - DI - Using DI.md",
+                "file": "ASP.NET Core - Confoguration - Configuration Service.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASP.NET Core - DI - Using DI.md"
+                "file": "ASP.NET Core - Confoguration - Configuration Service.md"
               }
             }
           }
@@ -144,15 +144,15 @@
   },
   "active": "b7d67c49ff1672d5",
   "lastOpenFiles": [
-    "ASP.NET Core - DI.md",
-    "Abbreviations.md",
-    "NET Core - dotnet cli.md",
-    "NET - TPL - Tips and Tricks.md",
-    "NET - Performance - Reflection.md",
-    "NET - Net - HttpListener.md",
-    "NET - LINQ - IQuerable_T.md",
-    "NET - Libraries.md",
-    "NET - Lang - Using the Null-Coalescing Operator.md",
-    "NET - Lang - Using an Index Initializer.md"
+    "ASP.NET Core - Configuration - Multiple environments.md",
+    "ASP.NET Core - ASP.NET Structure.md",
+    "ASP.NET Core - Middleware and the Request Pipeline.md",
+    "ASP.NET Core - Middleware - Creating Custom Middleware.md",
+    "ASP.NET Core - Middleware - Configuration.md",
+    "ASP.NET Core - HttpResponse.md",
+    "ASP.NET Core - Configuring Middleware.md",
+    "ASP.NET Core - Confoguration - Configuration Service.md",
+    "ASP.NET Core - Configuration.md",
+    "ASP.NET Core - Install Bootstrap.md"
   ]
 }
