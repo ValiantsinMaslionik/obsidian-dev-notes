@@ -1,4 +1,4 @@
-#NET/Platform/Delegates
+#NET/Platform
 
 ---
 

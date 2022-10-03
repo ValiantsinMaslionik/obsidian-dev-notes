@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "ASP.NET Core - Confoguration - Configuration Service.md",
+            "file": "NET - SDK - Project.md",
             "mode": "preview",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "ASP.NET Core - Confoguration - Configuration Service.md"
+            "file": "NET - SDK - Project.md"
           }
         },
         "group": "1e5bb2f3799db247"
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASP.NET Core - Confoguration - Configuration Service.md",
+                "file": "NET - SDK - Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASP.NET Core - Confoguration - Configuration Service.md",
+                "file": "NET - SDK - Project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "useHierarchy": true
               }
             }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASP.NET Core - Confoguration - Configuration Service.md"
+                "file": "NET - SDK - Project.md"
               }
             }
           }
@@ -144,15 +144,15 @@
   },
   "active": "b7d67c49ff1672d5",
   "lastOpenFiles": [
-    "ASP.NET Core - Configuration - Multiple environments.md",
-    "ASP.NET Core - ASP.NET Structure.md",
-    "ASP.NET Core - Middleware and the Request Pipeline.md",
-    "ASP.NET Core - Middleware - Creating Custom Middleware.md",
-    "ASP.NET Core - Middleware - Configuration.md",
-    "ASP.NET Core - HttpResponse.md",
-    "ASP.NET Core - Configuring Middleware.md",
-    "ASP.NET Core - Confoguration - Configuration Service.md",
-    "ASP.NET Core - Configuration.md",
-    "ASP.NET Core - Install Bootstrap.md"
+    "NET - Csharp - Records.md",
+    "NET - Csharp - Deconstructing tuples and other types.md",
+    "NET - Csharp - Pattern Matching.md",
+    "NET - Csharp - init-only properties.md",
+    "NET - Logging - Debug and Trace.md",
+    "NET - Misc.md",
+    "NET - Expression trees.md",
+    "NET - Delegates.md",
+    "NET - Misc - Libraries.md",
+    "NET - SDK - dotnet cli.md"
   ]
 }

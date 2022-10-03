@@ -1,4 +1,4 @@
-#NET/Platform/ExpressionTrees
+#NET/Platform
 
 ---
 
@@ -41,8 +41,8 @@ public static class ThreeFourths
 
 ## Executing DSLs
 
-Implementing simple calculator that can pasre expression from a string (using [[NET - Libraries|sprache]] library).
-Also, there is a faster version of the .Compile() method provided by the [[NET - Libraries|FastExpressionCompiler]] library.
+Implementing simple calculator that can pasre expression from a string (using [[NET - Misc - Libraries|sprache]] library).
+Also, there is a faster version of the .Compile() method provided by the [[NET - Misc - Libraries|FastExpressionCompiler]] library.
 
 ```csharp
 public static class SimpleCalculator 
@@ -128,7 +128,7 @@ Let's imagine that we want to see source code that failed assertion insted of a 
 
 ### Solution
 
-> .ToReadableString() - extension method provided by the [[NET - Libraries|ReadableExpressions]] library
+> .ToReadableString() - extension method provided by the [[NET - Misc - Libraries|ReadableExpressions]] library
 
 ![[zIMG-NET-expressiontree-get-source-code-02.png]]
 
