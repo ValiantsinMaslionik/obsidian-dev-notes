@@ -4,6 +4,9 @@
 
 Name|Description|Tag|Link
 --|--|--|--
+BCL|The Base Class Library provides the most foundational types and utility functionality and is the base of all other .NET class libraries.|#Term/BCL|[Learn.MS](https://learn.microsoft.com/en-us/dotnet/standard/framework-libraries#base-class-library)
+CLR|Common Language Runtime - This runtime loads assemlies, compiles the IL code, executes the code, mamges resources|#Term/CLR|[Learn.MS](https://learn.microsoft.com/en-us/dotnet/standard/clr)
+CLS|Common Language Specification - To facilitate interoperability between different .NET languages|#Term/CLS|[Learn.MS](https://learn.microsoft.com/en-us/dotnet/standard/class-library-overview)
 CRUD|Create-Read-Update-Delete|#Term/CRUD|
 DSL|Domain specific language|#Term/DSL|
 DTO|Data transfer object|#Term/DTO|

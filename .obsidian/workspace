@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NET - SDK - Project.md",
+            "file": "NET - Publishing app for development.md",
             "mode": "preview",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "NET - SDK - Project.md"
+            "file": "NET - Publishing app for development.md"
           }
         },
         "group": "1e5bb2f3799db247"
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#NET/Platform/Delegates",
+                "query": "deconstru",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NET - SDK - Project.md",
+                "file": "NET - Publishing app for development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NET - SDK - Project.md",
+                "file": "NET - Publishing app for development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NET - SDK - Project.md"
+                "file": "NET - Publishing app for development.md"
               }
             }
           }
@@ -144,15 +144,15 @@
   },
   "active": "b7d67c49ff1672d5",
   "lastOpenFiles": [
+    "_Abbreviations.md",
+    "NET - .NET Core releases.md",
+    "NET - Garbage collection.md",
+    "NET - Reference and Value types.md",
+    "NET - Csharp - Interfaces.md",
+    "NET - Delegates.md",
+    "NET - SDK - Project.md",
     "NET - Csharp - Records.md",
     "NET - Csharp - Deconstructing tuples and other types.md",
-    "NET - Csharp - Pattern Matching.md",
-    "NET - Csharp - init-only properties.md",
-    "NET - Logging - Debug and Trace.md",
-    "NET - Misc.md",
-    "NET - Expression trees.md",
-    "NET - Delegates.md",
-    "NET - Misc - Libraries.md",
-    "NET - SDK - dotnet cli.md"
+    "NET - Csharp - Pattern Matching.md"
   ]
 }
