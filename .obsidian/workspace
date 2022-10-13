@@ -1,55 +1,47 @@
 {
   "main": {
-    "id": "a0aabe96f1b93312",
+    "id": "b225dfa1141168c8",
     "type": "split",
     "children": [
       {
-        "id": "b7d67c49ff1672d5",
+        "id": "93252b8585b13b58",
         "type": "leaf",
-        "dimension": 71.80820335066436,
+        "dimension": 77.39593417231364,
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "NET - Publishing app for development.md",
-=======
-            "file": "Visual Studio - Extensions.md",
->>>>>>> b99bc12d5dcb0be41b7e277ac42be641981408fb
+            "file": "msbuild - Microsoft.Net.Sdk.md",
             "mode": "preview",
             "source": true
           }
         },
-        "group": "1e5bb2f3799db247"
+        "group": "bb613317ad42e030"
       },
       {
-        "id": "d444d010707548f2",
+        "id": "197f1109d2c71f79",
         "type": "leaf",
-        "dimension": 28.191796649335643,
+        "dimension": 22.604065827686348,
         "state": {
           "type": "outline",
           "state": {
-<<<<<<< HEAD
-            "file": "NET - Publishing app for development.md"
-=======
-            "file": "Visual Studio - Extensions.md"
->>>>>>> b99bc12d5dcb0be41b7e277ac42be641981408fb
+            "file": "msbuild - Microsoft.Net.Sdk.md"
           }
         },
-        "group": "1e5bb2f3799db247"
+        "group": "bb613317ad42e030"
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "4594d2c9285e6a7a",
+    "id": "972ef43e4c2c963b",
     "type": "split",
     "children": [
       {
-        "id": "416aaed5d1bf0aeb",
+        "id": "40f30fdcc33c089c",
         "type": "tabs",
         "children": [
           {
-            "id": "ffda0a26d9982b85",
+            "id": "a7a0e9b75bb11cfd",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -57,12 +49,12 @@
             }
           },
           {
-            "id": "7d27199bbd83bc96",
+            "id": "079ec84b37782d69",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "deconstru",
+                "query": "nuget",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,7 +64,7 @@
             }
           },
           {
-            "id": "02079d3ef972378e",
+            "id": "47dd4a3ba550bb3c",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -83,55 +75,47 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5
+    "width": 372.5
   },
   "right": {
-    "id": "199da9ee5de9fd55",
+    "id": "562664d7fe6c670f",
     "type": "split",
     "children": [
       {
-        "id": "bee69160fad148a5",
+        "id": "3627fc3f54b988ff",
         "type": "tabs",
         "children": [
           {
-            "id": "5b73e6d693311756",
+            "id": "2fedf305f7d31aff",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "NET - Publishing app for development.md",
-=======
-                "file": "Visual Studio - Extensions.md",
->>>>>>> b99bc12d5dcb0be41b7e277ac42be641981408fb
+                "file": "msbuild - Microsoft.Net.Sdk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": false
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "3d8971b6177c78c1",
+            "id": "b07a218a5e63c42d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "NET - Publishing app for development.md",
-=======
-                "file": "Visual Studio - Extensions.md",
->>>>>>> b99bc12d5dcb0be41b7e277ac42be641981408fb
+                "file": "msbuild - Microsoft.Net.Sdk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "ebbdbf328546638e",
+            "id": "4eee2befac7ff8cc",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,51 +126,33 @@
             }
           },
           {
-            "id": "a9cf68973c2fd8cc",
+            "id": "e1cac2516b82b29f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "NET - Publishing app for development.md"
-=======
-                "file": "Visual Studio - Extensions.md"
->>>>>>> b99bc12d5dcb0be41b7e277ac42be641981408fb
+                "file": "msbuild - Microsoft.Net.Sdk.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "b7d67c49ff1672d5",
+  "active": "93252b8585b13b58",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "_Abbreviations.md",
-    "NET - .NET Core releases.md",
-    "NET - Garbage collection.md",
-    "NET - Reference and Value types.md",
-    "NET - Csharp - Interfaces.md",
-    "NET - Delegates.md",
-    "NET - SDK - Project.md",
-    "NET - Csharp - Records.md",
-    "NET - Csharp - Deconstructing tuples and other types.md",
-    "NET - Csharp - Pattern Matching.md"
-=======
-    "Visual Studio - Tools.md",
-    "Visual Studio - Extensions.md",
-    "git - push using different credentials.md",
-    "NET - SDK - Project.md",
-    "NET - Csharp - Records.md",
-    "NET - Csharp - Deconstructing tuples and other types.md",
-    "NET - Csharp - Pattern Matching.md",
-    "NET - Csharp - init-only properties.md",
-    "NET - Logging - Debug and Trace.md",
-    "NET - Misc.md"
->>>>>>> b99bc12d5dcb0be41b7e277ac42be641981408fb
+    "msbuild - Common MSBuild project items.md",
+    "msbuild - Customize your build.md",
+    "msbuild - Common MSBuild project properties.md",
+    "msbuild - Well-known item metadata.md",
+    "NET - Misc - Common Practices In .NET Project Structure.md",
+    "nuget.md",
+    "msbuild - NuGet pack and restore targets.md",
+    "msbuild - MSBuild response files.md",
+    "msbuild - Microsoft.Net.Sdk.md",
+    "msbuild - NET project SDKs.md"
   ]
 }
