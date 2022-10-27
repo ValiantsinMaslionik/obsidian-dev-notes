@@ -32,9 +32,9 @@ For more information on wildcards, see [How to: Select the files to build](http
 If the folder _C:\\MySolution\\MyProject\\Source\\_ contains the file _Program.cs_, and if the project file contains this item:  
 
 ```xml
-<ItemGroup>`  
-	<MyItem Include="C:\**\Program.cs" />`  
-</ItemGroup>`  
+<ItemGroup> 
+	<MyItem Include="C:\**\Program.cs" />
+</ItemGroup>  
 ```
 
 then the value of `%(MyItem.RecursiveDir)` would be _MySolution\\MyProject\\Source\\_.

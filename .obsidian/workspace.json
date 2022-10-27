@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "b225dfa1141168c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aff1efb95663d2a",
+        "type": "tabs",
+        "dimension": 77.39593417231364,
+        "children": [
+          {
+            "id": "93252b8585b13b58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "msbuild - Well-known item metadata.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "40c47b10990dc5ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "msbuild - Common MSBuild project items.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e01776e6530f7dad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASP.NET Core - ASP.NET Core Project.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "130828731ac5a7b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "msbuild - Customize your build.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "365e01cf2672dff9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "msbuild - Targets.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "e1177b8cb9df752c",
+        "type": "tabs",
+        "dimension": 22.604065827686348,
+        "children": [
+          {
+            "id": "197f1109d2c71f79",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "msbuild - Targets.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "972ef43e4c2c963b",
+    "type": "split",
+    "children": [
+      {
+        "id": "40f30fdcc33c089c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7a0e9b75bb11cfd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "079ec84b37782d69",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "47dd4a3ba550bb3c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 372.5
+  },
+  "right": {
+    "id": "562664d7fe6c670f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3627fc3f54b988ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2fedf305f7d31aff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "msbuild - Targets.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b07a218a5e63c42d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "msbuild - Targets.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4eee2befac7ff8cc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e1cac2516b82b29f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "msbuild - Targets.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "365e01cf2672dff9",
+  "lastOpenFiles": [
+    "zDOC_msbuild-multitargeting-run-target-once-per-project.md",
+    "msbuild - Targets.md",
+    "msbuild - Customize your build.md",
+    "msbuild - Microsoft.Net.Sdk.md",
+    "msbuild - Common MSBuild project items.md",
+    "msbuild - Common MSBuild project properties.md",
+    "msbuild - MSBuild response files.md",
+    "msbuild - NET project SDKs.md",
+    "msbuild - NuGet pack and restore targets.md",
+    "msbuild - Properties and functions.md"
+  ]
+}
