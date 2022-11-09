@@ -117,7 +117,7 @@ app.MapGet("size/{city?}", Population.Endpoint).WithMetadata(new RouteNameMetada
 app.Run();
 ```
 
-Optional segments are denoted with a question mark (the _?_ character) after the variable name and
+Optional segments are denoted with a question mark (the `?` character) after the variable name and
 allow the route to match URLs that don’t have a corresponding path segment, as described in Table 13-7.
 
 URL|Path Description
@@ -130,9 +130,9 @@ URL|Path Description
 
 ## Using a catchall Segment Variable
 
-Optional segments allow a pattern to match shorter URL paths. A catchall segment does the opposite and
+Optional segments allow a pattern to match shorter URL paths. A `catchall` segment does the opposite and
 allows routes to match URLs that contain more segments than the pattern. A catchall segment is denoted
-with an asterisk (_*_) before the variable name, as shown in Listing 13-19.
+with an asterisk (`*`) before the variable name, as shown in Listing 13-19.
 
 ```cs
 using Platform;
@@ -152,10 +152,10 @@ app.MapGet("size/{city?}", Population.Endpoint).WithMetadata(new RouteNameMetada
 app.Run();
 ```
 
-The new pattern contains two-segment variables and a catchall, and the result is that the route
+The new pattern contains two-segment variables and a `catchall`, and the result is that the route
 will match any URL whose path contains two or more segments. There is no upper limit to the number
 of segments that the URL pattern in this route will match, and the contents of any additional segments
-are assigned to the segment variable named catchall. 
+are assigned to the segment variable named `catchall`. 
 
 > Notice that the segments captured by the catchall are presented in the form segment/segment/segment
 > and that the endpoint is responsible for processing the string to break out the individual segments.

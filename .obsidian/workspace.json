@@ -67,9 +67,45 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "472bea8ce3038131",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NET - regex.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "285d10715428404b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASP.NET Core - Hosting.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "0d19318ce58a8632",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       },
       {
         "id": "e1177b8cb9df752c",
@@ -82,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "msbuild - Targets.md"
+                "file": "ASP.NET Core - Routing - Managing URL Matching.md"
               }
             }
           }
@@ -152,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "msbuild - Targets.md",
+                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "msbuild - Targets.md",
+                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "msbuild - Targets.md"
+                "file": "ASP.NET Core - Routing - Managing URL Matching.md"
               }
             }
           }
@@ -203,20 +239,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "365e01cf2672dff9",
+  "active": "0d19318ce58a8632",
   "lastOpenFiles": [
-    "zDOC_msbuild-multitargeting-run-target-once-per-project.md",
+    "ASP.NET Core - Hosting.md",
+    "msbuild - Well-known item metadata.md",
+    "ASP.NET Core - Hosting - Directory structure.md",
+    "NET - regex.md",
     "msbuild - Targets.md",
+    "ASP.NET Core - DI - Other Dependency Injection Features.md",
+    "ASP.NET Core - Blazor.md",
+    "zDOC_msbuild-multitargeting-run-target-once-per-project.md",
     "msbuild - Customize your build.md",
-    "msbuild - Microsoft.Net.Sdk.md",
-    "msbuild - Common MSBuild project items.md",
-    "msbuild - Common MSBuild project properties.md",
-    "msbuild - MSBuild response files.md",
-    "msbuild - NET project SDKs.md",
-    "msbuild - NuGet pack and restore targets.md",
-    "msbuild - Properties and functions.md"
+    "msbuild - Microsoft.Net.Sdk.md"
   ]
 }
