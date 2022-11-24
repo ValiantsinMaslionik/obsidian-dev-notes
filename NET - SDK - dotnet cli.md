@@ -4,28 +4,22 @@
 
 ## Building and Running Projects
 
-### Building project
-
-`dotnet build [<project_name>]`
-
-### Running project
-
-`dotnet run [<project_name>]`
-
-###  Hot Reload Feature
-
-As you make changes to the project, you will see that the code is automatically recompiled and that changes are automatically displayed in the browser.
-
-`dotnet watch [<project_name>]`
-
-### Running application (dll)
-`dotnet <dll_name>`
-
-### running test project
-
-`dotnet test [<project_name>]`
+Command|Description
+--|--
+dotnet build \[\<project_name\>\]|Compiles the project
+dotnet test \[\<project_name\>\]|Runs unit tests on the project
+dotnet run \[\<project_name\>\]|Runs the project
+dotnet pack \[\<project_name\>\]|Creates NuGEt package for the project
+dotnet publish \[\<project_name\>\]|Compiles and then publishes the project, either with dependencies or as a self-contained application
+dotnet \[\<app_name.dll\>\]|Runs the app
 
 ## Create project and solution
+
+### To list currently installed templates
+
+```ps1
+dotnet new -l
+```
 
 ### Console
 ```ps1
@@ -58,25 +52,20 @@ dotnet sln add SimpleApp.Tests
 dotnet add SimpleApp.Tests reference SimpleApp
 ```
 
-| Name | Description
----|---
+ Name | Description
+--|--
 mstest | This template creates a project configured for the MS Test framework, which is produced by Microsoft.
 nunit | This template creates a project configured for the NUnit framework.
 xunit | This template creates a project configured for the XUnit framework.
 
 ## Managing Packages
 
-### Adding a package
-
-`dotnet add package Swashbuckle.AspNetCore --version 6.2.2`
-
-### Listing the Packages in a Project
-
-`dotnet list package`
-
-### Removing a Package
-
-`dotnet remove package Microsoft.EntityFrameworkCore.SqlServer`
+Command|Description
+--|--
+dotnet add package &lt;id&gt; --version &lt;x.x.x&gt;|Adding a package to a project
+dotnet list package|Listing the packages in a Project
+dotnet remove package &lt;id&gt;|Removing the package from a project
+dotnet restore|To restore packages in a project (or solution)
 
 ## Managing Tool Packages
 

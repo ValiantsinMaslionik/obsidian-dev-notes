@@ -14,4 +14,16 @@ Choose **3** to perform a self-contained deployment. This includes both applicat
 
 ## App to publish
 
+Project file
+
+```xml
+<Project Sdk="Microsoft.NET.SDK">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<!-- Target runtime identifiers -->
+		<RuntimeIdentifiers>win10-x64;osx-x64;rhel.7.4-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+</Project>
+```
 
