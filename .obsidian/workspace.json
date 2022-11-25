@@ -1,80 +1,79 @@
 {
   "main": {
-    "id": "b225dfa1141168c8",
+    "id": "99e25c9d9c721250",
     "type": "split",
     "children": [
       {
-        "id": "5aff1efb95663d2a",
+        "id": "f8a7d9583f13be44",
         "type": "tabs",
-        "dimension": 77.39593417231364,
         "children": [
           {
-            "id": "93252b8585b13b58",
+            "id": "04297bf108168bc3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "msbuild - Well-known item metadata.md",
+                "file": "ASP.NET Core - Configuration - Configuration Service.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "40c47b10990dc5ef",
+            "id": "459f5a5079a687e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "msbuild - Common MSBuild project items.md",
+                "file": "ASP.NET Core - Configuration - Launch Settings File.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "e01776e6530f7dad",
+            "id": "85df8a185ee804d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core - ASP.NET Core Project.md",
+                "file": "ASP.NET Core - Configuration - Environment Service.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d58bf43ecbb40977",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASP.NET Core - Configuration - Storing User Secrets.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "130828731ac5a7b3",
+            "id": "d4eea8b6a6160475",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "msbuild - Customize your build.md",
+                "file": "ASP.NET Core - Logging.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "365e01cf2672dff9",
+            "id": "f3e777a71a796e5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "msbuild - Targets.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "472bea8ce3038131",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NET - regex.md",
+                "file": "ASP.NET Core - Static Content and Client-Side Packages.md",
                 "mode": "preview",
                 "source": true
               }
@@ -164,15 +163,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "972ef43e4c2c963b",
+    "id": "02f927ef50397ac6",
     "type": "split",
     "children": [
       {
-        "id": "40f30fdcc33c089c",
+        "id": "e6071138e20fd07e",
         "type": "tabs",
         "children": [
           {
-            "id": "a7a0e9b75bb11cfd",
+            "id": "1e714c62c29314d9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -182,7 +181,7 @@
             }
           },
           {
-            "id": "079ec84b37782d69",
+            "id": "c6dc9cec8b203e65",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -197,7 +196,7 @@
             }
           },
           {
-            "id": "47dd4a3ba550bb3c",
+            "id": "4ee053c5bc30cb5e",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -211,20 +210,20 @@
     "width": 447.5
   },
   "right": {
-    "id": "562664d7fe6c670f",
+    "id": "2d3e7ce76d7844e4",
     "type": "split",
     "children": [
       {
-        "id": "3627fc3f54b988ff",
+        "id": "b52821575de74dc7",
         "type": "tabs",
         "children": [
           {
-            "id": "2fedf305f7d31aff",
+            "id": "c79c16272b4011c6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NET - Profiling.md",
+                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,19 +235,17 @@
             }
           },
           {
-            "id": "b07a218a5e63c42d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NET - Profiling.md",
-                "linksCollapsed": false,
+                "file": "ASP.NET Core - Static Content and Client-Side Packages.md",
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "4eee2befac7ff8cc",
+            "id": "211ee35541726fe8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -259,7 +256,7 @@
             }
           },
           {
-            "id": "e1cac2516b82b29f",
+            "id": "4ba619f36025b21d",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -275,17 +272,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2f350a8013ad18a9",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
   "lastOpenFiles": [
-    "NET - Misc - Libraries.md",
-    "_DevTools.md",
-    "NET - Profiling.md",
-    "NET - SDK - dotnet cli.md",
-    "ASP.NET Core - How to get startup dir.md",
-    "ASP.NET Core - Hosting.md",
-    "ASP.NET Core - Publish.md",
-    "ASP.NET Core - Routing.md",
-    "NET - Publishing app for development.md",
-    "ASP.NET Core - Configuration - Multiple environments.md"
   ]
 }
