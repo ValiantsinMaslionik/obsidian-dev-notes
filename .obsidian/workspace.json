@@ -98,14 +98,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
+                "file": "nuget.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "b75feac3bc94dea4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASP.NET Core - Hosting.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a7b2da09d940e4d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NET - SDK - dotnet cli.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "2f350a8013ad18a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NET - Profiling.md",
                 "mode": "preview",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 10
       },
       {
         "id": "e1177b8cb9df752c",
@@ -118,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASP.NET Core - Routing - Managing URL Matching.md"
+                "file": "NET - Profiling.md"
               }
             }
           }
@@ -151,7 +187,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "publish",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,7 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 447.5
   },
   "right": {
     "id": "562664d7fe6c670f",
@@ -188,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
+                "file": "NET - Profiling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +241,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASP.NET Core - Routing - Managing URL Matching.md",
+                "file": "NET - Profiling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +264,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASP.NET Core - Routing - Managing URL Matching.md"
+                "file": "NET - Profiling.md"
               }
             }
           }
@@ -239,17 +275,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0d19318ce58a8632",
+  "active": "2f350a8013ad18a9",
   "lastOpenFiles": [
+    "NET - Misc - Libraries.md",
+    "_DevTools.md",
+    "NET - Profiling.md",
+    "NET - SDK - dotnet cli.md",
+    "ASP.NET Core - How to get startup dir.md",
     "ASP.NET Core - Hosting.md",
-    "msbuild - Well-known item metadata.md",
-    "ASP.NET Core - Hosting - Directory structure.md",
-    "NET - regex.md",
-    "msbuild - Targets.md",
-    "ASP.NET Core - DI - Other Dependency Injection Features.md",
-    "ASP.NET Core - Blazor.md",
-    "zDOC_msbuild-multitargeting-run-target-once-per-project.md",
-    "msbuild - Customize your build.md",
-    "msbuild - Microsoft.Net.Sdk.md"
+    "ASP.NET Core - Publish.md",
+    "ASP.NET Core - Routing.md",
+    "NET - Publishing app for development.md",
+    "ASP.NET Core - Configuration - Multiple environments.md"
   ]
 }
