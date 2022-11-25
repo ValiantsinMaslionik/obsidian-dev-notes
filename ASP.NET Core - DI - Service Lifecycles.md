@@ -99,7 +99,7 @@ namespace Platform
 
 The ASP.NET Core platform will resolve dependencies declared by the Invoke method every time a request is processed, which ensures that a new transient service object is created.
 
->![[zICO - Warning - 16.png]] The [[ASP.NET Core - DI - Using a Service in an Endpoint#Using the _ActivatorUtilities_ Class|ActivatorUtilities]] class doesn’t deal with resolving dependencies for methods, and ASP.NET Core includes this feature only for middleware components. 
+>![[zICO - Warning - 16.png]] The [[ASP.NET Core - DI - Service in an Endpoint#Using the _ActivatorUtilities_ Class|ActivatorUtilities]] class doesn’t deal with resolving dependencies for methods, and ASP.NET Core includes this feature only for middleware components. 
 
 The simplest way of solving this issue for endpoints is to ==explicitly request services when each request is handled==, which is the approach I used earlier when showing how services are used. It is also possible to enhance the extension method to request services on behalf of an endpoint.
 
@@ -185,9 +185,7 @@ namespace Platform
 }
 ```
 
-> Since the IResponseFormatter service was created with the AddTransient method, each dependency is resolved with a different object. 
-
- >![[zICO - Warning - 16.png]] You can create scopes through the [_CreateScope()_](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.serviceproviderserviceextensions.createscope?view=dotnet-plat-ext-6.0)** extension method for the IServiceProvider interface. The result is an IServiceProvider that is associated with a new scope and that will have its own implementation objects for scoped services.
+Since the `IResponseFormatter` service was created with the `AddTransient` method, each dependency is resolved with a different object. 
 
 ```cs
 using Platform;
@@ -212,15 +210,18 @@ app.MapGet("endpoint/function", async (HttpContext context, IResponseFormatter f
 app.Run();
 ```
 
+ >![[zICO - Warning - 16.png]] You can create scopes through the **[_CreateScope()_](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.serviceproviderserviceextensions.createscope?view=dotnet-plat-ext-6.0)** extension method for the `IServiceProvider` interface. The result is an `IServiceProvider` that is associated with a new scope and that will have its own implementation objects for scoped services.
+
 Restart ASP.NET Core and you will see that the same GUID is used to resolve all three dependencies declared by the middleware component. Core creates a new scope and a new service object.
 
 ### Avoiding the Scoped Service Validation Pitfall
 
 Service consumers are unaware of the lifecycle that has been selected for singleton and transient services: they declare a dependency or request a service and get the object they require. ==Scoped services can be used only within a scope.== A new scope is created automatically for each request that was received. 
 
->![[zICO - Exclamation - 16.png]] Requesting a scoped service outside of a scope causes an exception. 
+>![[zICO - Exclamation - 16.png]] Requesting a scoped service outside of a scope causes an exception!
 
-The extension method that configures the endpoint resolves services through an IServiceProvider object obtained from the routing middleware, like this:
+Problem example:  The extension method that configures the endpoint resolves services through an IServiceProvider object obtained from the routing middleware:
+
 ```cs
 ...
 app.MapGet(path, context => (Task)(methodInfo.Invoke(endpointInstance, methodParams.Select(p => p.ParameterType == typeof(HttpContext)
@@ -233,9 +234,11 @@ app.MapGet(path, context => (Task)methodInfo.Invoke(endpointInstance, methodPara
 ...
 ```
 
+![[zIMG-ASP.NET-DI-scoped-pitfall.png]]
+
 ### Accessing Scoped Services Through the Context Object
 
-The [[ASP.NET Core - HttpContext|HttpContext]] class defines a *RequestServices* property that returns an *IServiceProvider* object that allows access to scoped services, as well as singleton and transient services. This fits well with the most common use of scoped services, which is to use a single service object for each HTTP request. 
+The [[ASP.NET Core - HttpContext|HttpContext]] class defines a `RequestServices` property that returns an `IServiceProvider` object that allows access to *scoped services, as well as singleton and transient services*. This fits well with the most common use of scoped services, which is to use a single service object for each HTTP request. 
 
 ```cs
 using System.Reflection;
@@ -264,13 +267,14 @@ namespace Microsoft.AspNetCore.Builder
 }
 ```
 
-Only dependencies that are declared by the method that handles the request are resolved using the HttpContext.RequestServices property. Services that are declared by an endpoint class constructor are still resolved using the 
-EndpointRouteBuilder.ServiceProvider property, which ensures that endpoints don’t use scoped services inappropriately.
+> ![[zICO - Warning - 16.png]] Only dependencies that are declared by the method that handles the request are resolved using the `HttpContext.RequestServices` property. Services that are declared by an endpoint class constructor are still resolved using the `EndpointRouteBuilder.ServiceProvider` property, **which ensures that endpoints don’t use scoped services inappropriately**.
 
 ### Creating New Handlers for Each Request
 
-The problem with the extension method is that it requires endpoint classes to know the lifecycles for the services they depend on. The WeatherEndpoint class depends on the IResponseFormatter service and must know that a dependency can be declared only through the Endpoint method and not the constructor.
+The problem with the extension method is that it requires endpoint classes to know the lifecycles for the services they depend on. The `WeatherEndpoint` class depends on the `IResponseFormatter` service and must know that a dependency can be declared only through the `Endpoint` method and not the `constructor`.
 To remove the need for this knowledge, a new instance of the endpoint class can be created to handle each request, as shown in Listing 14-30, which allows constructor and method dependencies to be resolved without needing to know which services are scoped.
+
+> This approach requires a new instance of the endpoint class to handle each request, but it ensures that no knowledge of service lifecycles is required.
 
 ```cs
 using System.Reflection;
@@ -287,26 +291,28 @@ namespace Microsoft.AspNetCore.Builder
 				throw new System.Exception("Method cannot be used");
 			}
 			
-			T endpointInstance = ActivatorUtilities.CreateInstance<T>(app.ServiceProvider);
 			ParameterInfo[] methodParams = methodInfo!.GetParameters();
 			
 			app.MapGet(path, context => 
 			{
 				T endpointInstance = ActivatorUtilities.CreateInstance<T>(context.RequestServices);
-				return (Task)methodInfo.Invoke(endpointInstance!, methodParams.Select(p => p.ParameterType == typeof(HttpContext)
-					? context
-					: context.RequestServices.GetService(p.ParameterType)).ToArray())!;
+				return (Task)methodInfo.Invoke(
+					endpointInstance!, 
+					methodParams
+						.Select(p => 
+							p.ParameterType == typeof(HttpContext)
+								? context
+								: context.RequestServices.GetService(p.ParameterType))
+						.ToArray())!;
 			});
 		}
 	}
 }
 ```
 
-This approach requires a new instance of the endpoint class to handle each request, but it ensures that no knowledge of service lifecycles is required.
-
 ### Using Scoped Services in Lambda Expressions
 
-The HttpContext class can also be used in middleware components and endpoints that are defined as lambda expressions, as shown in Listing 14-31.
+The `HttpContext` class can also be used in middleware components and endpoints that are defined as lambda expressions, as shown in Listing 14-31.
 
 ```cs
 using Platform;
@@ -342,4 +348,5 @@ app.Services.CreateScope().ServiceProvider.GetRequiredService<MyScopedService>()
 ...
 ```
 
-> The _CreateScope_ method creates a scope that allows scoped services to be accessed. If you try to obtain a scoped service without creating a scope, then you will receive an exception.
+> The `CreateScope` method creates a scope that allows scoped services to be accessed. 
+> ![[zICO - Warning - 16.png]] If you try to obtain a scoped service without creating a scope, then you will receive an exception.

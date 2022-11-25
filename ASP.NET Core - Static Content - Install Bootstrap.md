@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Bootstrap
+#ASP_NET_CORE/Platform/StaticContent 
 
 ---
 

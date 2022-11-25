@@ -1,5 +1,6 @@
 {
   "main": {
+<<<<<<< HEAD
     "id": "99e25c9d9c721250",
     "type": "split",
     "children": [
@@ -11,10 +12,24 @@
           "type": "markdown",
           "state": {
             "file": "NET - SDK - dotnet cli.md",
+=======
+    "id": "b225dfa1141168c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "93252b8585b13b58",
+        "type": "leaf",
+        "dimension": 77.39593417231364,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "msbuild - Microsoft.Net.Sdk.md",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "mode": "preview",
             "source": true
           }
         },
+<<<<<<< HEAD
         "group": "ae7da5f18b1aa596"
       },
       {
@@ -28,11 +43,27 @@
           }
         },
         "group": "ae7da5f18b1aa596"
+=======
+        "group": "bb613317ad42e030"
+      },
+      {
+        "id": "197f1109d2c71f79",
+        "type": "leaf",
+        "dimension": 22.604065827686348,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "msbuild - Microsoft.Net.Sdk.md"
+          }
+        },
+        "group": "bb613317ad42e030"
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
       }
     ],
     "direction": "vertical"
   },
   "left": {
+<<<<<<< HEAD
     "id": "02f927ef50397ac6",
     "type": "split",
     "children": [
@@ -42,6 +73,17 @@
         "children": [
           {
             "id": "1e714c62c29314d9",
+=======
+    "id": "972ef43e4c2c963b",
+    "type": "split",
+    "children": [
+      {
+        "id": "40f30fdcc33c089c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7a0e9b75bb11cfd",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -49,12 +91,20 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "c6dc9cec8b203e65",
+=======
+            "id": "079ec84b37782d69",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
+<<<<<<< HEAD
                 "query": "deplo",
+=======
+                "query": "nuget",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,7 +114,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "4ee053c5bc30cb5e",
+=======
+            "id": "47dd4a3ba550bb3c",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -75,6 +129,7 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 300
   },
   "right": {
@@ -87,11 +142,29 @@
         "children": [
           {
             "id": "c79c16272b4011c6",
+=======
+    "width": 372.5
+  },
+  "right": {
+    "id": "562664d7fe6c670f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3627fc3f54b988ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2fedf305f7d31aff",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "NET - SDK - dotnet cli.md",
+=======
+                "file": "msbuild - Microsoft.Net.Sdk.md",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,19 +176,31 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "5410400b87d32a19",
+=======
+            "id": "b07a218a5e63c42d",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "NET - SDK - dotnet cli.md",
+=======
+                "file": "msbuild - Microsoft.Net.Sdk.md",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
+<<<<<<< HEAD
             "id": "211ee35541726fe8",
+=======
+            "id": "4eee2befac7ff8cc",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -126,12 +211,20 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "4ba619f36025b21d",
+=======
+            "id": "e1cac2516b82b29f",
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "NET - SDK - dotnet cli.md"
+=======
+                "file": "msbuild - Microsoft.Net.Sdk.md"
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
               }
             }
           }
@@ -142,8 +235,23 @@
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
   "active": "9414476a46c4cf91",
   "lastOpenFiles": [
     "NET - Publishing app for development.md"
+=======
+  "active": "93252b8585b13b58",
+  "lastOpenFiles": [
+    "msbuild - Common MSBuild project items.md",
+    "msbuild - Customize your build.md",
+    "msbuild - Common MSBuild project properties.md",
+    "msbuild - Well-known item metadata.md",
+    "NET - Misc - Common Practices In .NET Project Structure.md",
+    "nuget.md",
+    "msbuild - NuGet pack and restore targets.md",
+    "msbuild - MSBuild response files.md",
+    "msbuild - Microsoft.Net.Sdk.md",
+    "msbuild - NET project SDKs.md"
+>>>>>>> dbafe6e00e31172388ba2b94c90dabbd5bce6e3b
   ]
 }
