@@ -6,3 +6,9 @@
 
 Directory.Build.props 
 Directory.Build.targets
+
+## How to import parent Directory.Build.props
+
+```xml
+<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+```

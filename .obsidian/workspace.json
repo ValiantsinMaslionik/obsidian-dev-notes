@@ -11,8 +11,12 @@
             "id": "529f63a181ce9741",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "msbuild - Customize your build.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "publish",
+                "query": "directory.bu",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "msbuild - Customize your build.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "msbuild - Customize your build.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "msbuild - Customize your build.md"
+              }
             }
           }
         ]
@@ -130,6 +139,7 @@
   },
   "active": "529f63a181ce9741",
   "lastOpenFiles": [
+    "ASP.NET Core - HTTPS Connections.md",
     "NET - Misc - Releases.md",
     "NET - MIsc - What's new - 7.0.md",
     "NET - Misc.md",
@@ -138,7 +148,6 @@
     "NET - Profiling.md",
     "NET - SDK - dotnet cli.md",
     "ASP.NET Core - Hosting.md",
-    "nuget.md",
-    "ASP.NET Core - Static Content and Client-Side Packages.md"
+    "nuget.md"
   ]
 }
