@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "msbuild - Customize your build.md",
+                "file": "msbuild - NuGet pack and restore targets.md",
                 "mode": "preview",
                 "source": true
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "directory.bu",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "msbuild - Customize your build.md",
+                "file": "msbuild - NuGet pack and restore targets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "msbuild - Customize your build.md",
+                "file": "msbuild - NuGet pack and restore targets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "msbuild - Customize your build.md"
+                "file": "msbuild - NuGet pack and restore targets.md"
               }
             }
           }
@@ -139,15 +138,15 @@
   },
   "active": "529f63a181ce9741",
   "lastOpenFiles": [
+    "msbuild - NET project SDKs.md",
+    "msbuild - MSBuild response files.md",
+    "msbuild - Microsoft.Net.Sdk.md",
+    "msbuild - Customize your build.md",
+    "msbuild - Common MSBuild project properties.md",
+    "msbuild - Common MSBuild project items.md",
+    "msbuild - NuGet pack and restore targets.md",
+    "nuget.md",
     "ASP.NET Core - HTTPS Connections.md",
-    "NET - Misc - Releases.md",
-    "NET - MIsc - What's new - 7.0.md",
-    "NET - Misc.md",
-    "ASP.NET Core - Configuration - Launch Settings File.md",
-    "ASP.NET Core - Configuration - Configuration Service.md",
-    "NET - Profiling.md",
-    "NET - SDK - dotnet cli.md",
-    "ASP.NET Core - Hosting.md",
-    "nuget.md"
+    "NET - Misc - Releases.md"
   ]
 }
