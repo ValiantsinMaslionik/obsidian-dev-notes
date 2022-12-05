@@ -4,59 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "f8a7d9583f13be44",
+        "id": "568c99de1020a7fb",
         "type": "tabs",
         "children": [
           {
-            "id": "86d741bbc3970bfc",
+            "id": "8b43f306bfe9b4a7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASP.NET Core - Session.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "5f905714cb4f7266",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASP.NET Core - HTTPS Connections.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "1f4df3a69fb27155",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASP.NET Core - Error Handling.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "e4c804dd439bfb2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -176,17 +131,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e4c804dd439bfb2c",
+  "active": "1e714c62c29314d9",
   "lastOpenFiles": [
-    "ASP.NET Core - Error Handling.md",
-    "ASP.NET Core - HTTPS Connections.md",
     "ASP.NET Core - Session.md",
+    "ASP.NET Core - HTTPS Connections.md",
+    "ASP.NET Core - Error Handling.md",
+    "ASP.NET Core - Filtering Requests Using the Host Header.md",
     "ASP.NET Core - Configuration - Configuration Service.md",
     "ASP.NET Core - Configuration - Launch Settings File.md",
     "ASP.NET Core - Configuration - Environment Service.md",
     "ASP.NET Core - Configuration - Storing User Secrets.md",
     "ASP.NET Core - Logging.md",
-    "ASP.NET Core - Static Content and Client-Side Packages.md",
-    "ASP.NET Core - Cookies.md"
+    "ASP.NET Core - Static Content and Client-Side Packages.md"
   ]
 }
