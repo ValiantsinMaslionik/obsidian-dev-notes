@@ -8,79 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "04297bf108168bc3",
+            "id": "86d741bbc3970bfc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core - Configuration - Configuration Service.md",
+                "file": "ASP.NET Core - Session.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "459f5a5079a687e3",
+            "id": "5f905714cb4f7266",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core - Configuration - Launch Settings File.md",
+                "file": "ASP.NET Core - HTTPS Connections.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "85df8a185ee804d2",
+            "id": "1f4df3a69fb27155",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core - Configuration - Environment Service.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d58bf43ecbb40977",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASP.NET Core - Configuration - Storing User Secrets.md",
+                "file": "ASP.NET Core - Error Handling.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "d4eea8b6a6160475",
+            "id": "e4c804dd439bfb2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core - Logging.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "f3e777a71a796e5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASP.NET Core - Static Content and Client-Side Packages.md",
+                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md",
                 "mode": "preview",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -109,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#asp_net_core/plat",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASP.NET Core - Static Content and Client-Side Packages.md",
+                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASP.NET Core - Static Content and Client-Side Packages.md",
+                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASP.NET Core - Static Content and Client-Side Packages.md"
+                "file": "ASP.NET Core - Filtering Requests Using the Host Header.md"
               }
             }
           }
@@ -200,17 +176,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f3e777a71a796e5e",
+  "active": "e4c804dd439bfb2c",
   "lastOpenFiles": [
-    "ASP.NET Core - Static Content - Install Bootstrap.md",
-    "ASP.NET Core - Middleware and the Request Pipeline.md",
-    "ASP.NET Core - Static Content and Client-Side Packages.md",
-    "ASP.NET Core - Routing - Refactoring Middleware into an Endpoint.md",
-    "ASP.NET Core - Routing - URL Patterns - Segment variables.md",
-    "ASP.NET Core - Routing - URL Patterns.md",
+    "ASP.NET Core - Error Handling.md",
+    "ASP.NET Core - HTTPS Connections.md",
+    "ASP.NET Core - Session.md",
     "ASP.NET Core - Configuration - Configuration Service.md",
     "ASP.NET Core - Configuration - Launch Settings File.md",
     "ASP.NET Core - Configuration - Environment Service.md",
-    "ASP.NET Core - DI - Service in an Endpoint.md"
+    "ASP.NET Core - Configuration - Storing User Secrets.md",
+    "ASP.NET Core - Logging.md",
+    "ASP.NET Core - Static Content and Client-Side Packages.md",
+    "ASP.NET Core - Cookies.md"
   ]
 }
