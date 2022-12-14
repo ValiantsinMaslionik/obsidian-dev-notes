@@ -6,4 +6,9 @@
 
 Name|Description
 --|--
+MSBuildThisFileFullPath|
 MSBuildThisFileDirectory|The directory portion of `MSBuildThisFileFullPath`. Include the final backslash in the path.
+MSBuildThisFileDirectoryNoRoot|
+MSBuildThisFile|
+MSBuildThisFileName|
+MSBuildThisFileExtension|
