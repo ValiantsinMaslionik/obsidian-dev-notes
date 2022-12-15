@@ -2,7 +2,6 @@
 
 ---
 
-
 [What is Nuget](https://learn.microsoft.com/en-us/nuget/what-is-nuget)
 
 ### Consume packages
@@ -21,7 +20,9 @@
 
 #### Advanced tasks
 
+[Add additional files in nuget package](zDOC_msbuild-additional-files-in-nuget-package.mhtml)
 [Supporting multiple target frameworks](https://learn.microsoft.com/en-us/nuget/create-packages/supporting-multiple-target-frameworks)
+[Shipping a cross-platform MSBuild task in a NuGet package](zDOC_msbuild-Shipping-crossplatform-task-nuget.mhtml)
 [Transforming source code and configuration files](https://learn.microsoft.com/en-us/nuget/create-packages/source-and-config-file-transformations)
 
 ### Concepts
@@ -47,5 +48,14 @@ Notation|Applied rule|Description
 ### Reference
 
 [.nuspec](https://learn.microsoft.com/en-us/nuget/reference/nuspec)
+
 [NuGet pack and restore as MSBuild targets](https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets)
 - [Including content in a package](https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets#including-content-in-a-package)
+
+#### pack target inputs
+
+Property|Description
+--|--
+IsTool|https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets#pack-target-inputs
+IncludeBuildOutput|If set to `true` then *lib* folder will be included into a package
+NoDefaultExcludes|If set to `true` the hidden (.\*) files and folders will be included into a package
