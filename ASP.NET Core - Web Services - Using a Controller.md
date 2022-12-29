@@ -1,4 +1,4 @@
-#ASP_NET_CORE/RESTfull 
+#ASP_NET_CORE/WebServices
 
 ---
 
@@ -6,13 +6,12 @@ The drawback of using individual endpoints to create a web service is that each 
 
 A more elegant and robust approach is to use a controller, which allows a web service to be defined in a single class. Controllers are part of the MVC Framework, which builds on the ASP.NET Core platform and takes care of handling data in the same way that endpoints take care of processing URLs.
 
-## THE RISE AND FALL OF THE MVC PATTERN IN ASP.NET CORE
+> **THE RISE AND FALL OF THE MVC PATTERN IN ASP.NET CORE**
+>The MVC Framework is an implementation of the **Model-View-Controller** pattern, which describes one way to structure an application. The examples in this chapter use two of the three pillars of the pattern: a data model (the M in MVC) and controllers (the C in MVC). Chapter 21 provides the missing piece and explains how views can be used to create HTML responses using Razor. The MVC pattern was an important step in the evolution of ASP.NET and allowed the platform to break away from the **Web Forms** model that predated it. Web Forms applications were easy to start but quickly became difficult to manage and hid details of HTTP requests and responses from the developer. By contrast, the adherence to the MVC pattern provided a strong and scalable structure for applications written with the MVC Framework and hid nothing from the developer. The MVC Framework revitalized ASP.NET and provided the foundation for what became ASP.NET Core, which dropped support for Web Forms and focused solely on using the MVC pattern. 
 
-The MVC Framework is an implementation of the **Model-View-Controller** pattern, which describes one way to structure an application. The examples in this chapter use two of the three pillars of the pattern: a data model (the M in MVC) and controllers (the C in MVC). Chapter 21 provides the missing piece and explains how views can be used to create HTML responses using Razor. The MVC pattern was an important step in the evolution of ASP.NET and allowed the platform to break away from the **Web Forms** model that predated it. Web Forms applications were easy to start but quickly became difficult to manage and hid details of HTTP requests and responses from the developer. By contrast, the adherence to the MVC pattern provided a strong and scalable structure for applications written with the MVC Framework and hid nothing from the developer. The MVC Framework revitalized ASP.NET and provided the foundation for what became ASP.NET Core, which dropped support for Web Forms and focused solely on using the MVC pattern. 
+>As ASP.NET Core evolved, other styles of web application have been embraced, and the MVC Framework is only one of the ways that applications can be created. That doesn’t undermine the utility of the MVC pattern, but it doesn’t have the central role that it used to in ASP.NET Core development, and the features that used to be unique to the MVC Framework can now be accessed through other approaches, such as **Razor Pages** and **Blazor**.
 
-As ASP.NET Core evolved, other styles of web application have been embraced, and the MVC Framework is only one of the ways that applications can be created. That doesn’t undermine the utility of the MVC pattern, but it doesn’t have the central role that it used to in ASP.NET Core development, and the features that used to be unique to the MVC Framework can now be accessed through other approaches, such as **Razor Pages** and **Blazor**.
-
-A consequence of this evolution is that understanding the MVC pattern is no longer a prerequisite for effective ASP.NET Core development. If you are interested in understanding the MVC pattern, then [https://en.wikipedia.org/wiki/Model–view–controller](https://en.wikipedia.org/wiki/Model–view–controller) is a good place to start. But for this book, understanding how the features provided by the MVC Framework build on the ASP.NET Core platform is all the context that is required.
+> A consequence of this evolution is that understanding the MVC pattern is no longer a prerequisite for effective ASP.NET Core development. If you are interested in understanding the MVC pattern, then [https://en.wikipedia.org/wiki/Model–view–controller](https://en.wikipedia.org/wiki/Model–view–controller) is a good place to start. But for this book, understanding how the features provided by the MVC Framework build on the ASP.NET Core platform is all the context that is required.
 
 ## Enabling the MVC Framework
 
