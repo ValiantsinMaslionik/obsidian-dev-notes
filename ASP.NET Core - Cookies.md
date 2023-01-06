@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Platform/Cookies
+#aspnet_core/Cookies
 
 ---
 

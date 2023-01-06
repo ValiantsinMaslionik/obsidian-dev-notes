@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Platform/DI 
+#aspnet_core/DI 
 
 ---
 

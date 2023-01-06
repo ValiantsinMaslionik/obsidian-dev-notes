@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Blazor
+#aspnet_core/Blazor
 
 ---
 

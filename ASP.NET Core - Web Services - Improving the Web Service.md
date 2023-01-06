@@ -1,4 +1,4 @@
-#ASP_NET_CORE/WebServices 
+#aspnet_core/WebServices 
 
 ---
 
@@ -81,7 +81,7 @@ Entity Framework Core provides asynchronous versions of some methods, such as `F
 > ![[zICO - Warning - 16.png]] For some operations—including LINQ queries to the database—the `IAsyncEnumerable<T>` interface can be used, which denotes a sequence of objects that should be enumerated asynchronously and prevents the ASP.NET Core request thread from waiting for each object to be produced by the database, as explained in Chapter 5.
 > There is no change to the responses produced by the controller, but the threads that ASP.NET Core assigns to process each request are not necessarily blocked by the action methods.
 
-## Preventing Over-Binding
+## EF - Preventing Over-Binding
 
 Some of the action methods use the model binding feature to get data from the response body so that it can be used to perform database operations. There is a problem with the `SaveProduct` action, which can be seen by using a PowerShell prompt to run the command shown in Listing 19-15.
 
@@ -300,7 +300,7 @@ supplierId : 1
 supplier :
 ```
 
-### Redirecting to an Action Method
+## Redirecting to an Action Method
 
 You can redirect to another action method using the `RedirectToAction` method (for temporary redirections) or the `RedirectToActionPermanent` method (for permanent redirections). Listing 19-23 changes the `Redirect` action method so that the client will be redirected to another action method defined by the controller.
 
@@ -340,3 +340,303 @@ public IActionResult Redirect()
 ```
 
 The set of values in this redirection relies on convention routing to select the controller and action method. Convention routing is typically used with controllers that produce HTML responses, as described in Chapter 21.
+
+## Validating Data
+
+When you accept data from clients, you must assume that a lot of the data will be invalid and be prepared to filter out values that the application can’t use. The data validation features provided for MVC Framework controllers are described in detail in Chapter 29, but for this chapter, I am going to focus on only one problem: ensuring that the client provides values for the properties that are required to store data in the database. The first step in model binding is to apply attributes to the properties of the data model class, as shown in Listing 19-24.
+
+Listing 19-24. Applying Attributes in the ProductBindingTarget.cs File in the Models Folder
+```cs
+using System.ComponentModel.DataAnnotations;
+
+namespace WebApp.Models 
+{
+	public class ProductBindingTarget 
+	{
+		[Required]
+		public string Name { get; set; } = "";
+		[Range(1, 1000)]
+		public decimal Price { get; set; }
+		[Range(1, long.MaxValue)]
+		public long CategoryId { get; set; }
+		[Range(1, long.MaxValue)]
+		public long SupplierId { get; set; }
+		
+		public Product ToProduct() => new Product() 
+		{
+			Name = this.Name, 
+			Price = this.Price,
+			CategoryId = this.CategoryId, 
+			SupplierId = this.SupplierId
+		};
+	}
+}
+```
+
+The `Required` attribute denotes properties for which the client must provide a value and can be applied to properties that are assigned null when there is no value in the request. The `Range` attribute requires a value between upper and lower limits and is used for primitive types that will default to zero when there is no value in the request.
+
+Listing 19-25 updates the SaveProduct action to perform validation before storing the object that is created by the model binding process, ensuring that only objects that contain values for all four properties are decorated with the validation attributes.
+
+Listing 19-25. Applying Validation in the ProductsController.cs File in the Controllers Folder
+```cs
+[HttpPost]
+public async Task<IActionResult> SaveProduct([FromBody] ProductBindingTarget target) 
+{
+	if (ModelState.IsValid) 
+	{
+		Product p = target.ToProduct();
+		await context.Products.AddAsync(p);
+		await context.SaveChangesAsync();
+		return Ok(p);
+	}
+	
+	return BadRequest(ModelState);
+}
+```
+
+The `ModelState` property is inherited from the `ControllerBase` class, and the `IsValid` property returns true if the model binding process has produced data that meets the validation criteria. If the data received from the client is valid, then the action result from the `Ok` method is returned. If the data sent by the client fails the validation check, then the `IsValid` property will be false, and the action result from the `BadRequest` method is used instead. The `BadRequest` method accepts the object returned by the `ModelState` property, which is used to describe the validation errors to the client. (There is no standard way to describe validation errors, so the client may rely only on the `400` status code to determine that there is a problem.)
+
+To test the validation, restart ASP.NET Core and use a new PowerShell command prompt to run the command shown in Listing 19-26.
+
+Listing 19-26. Testing Validation
+`Invoke-WebRequest http://localhost:5000/api/products -Method POST -Body (@{Name="BootLaces"} | ConvertTo-Json) -ContentType "application/json"`
+
+The command will throw an exception that shows the web service has returned a `400 Bad Request` response. Details of the validation errors are not shown because neither the `Invoke-WebRequest` command nor the `Invoke-RestMethod` command provides access to error response bodies. Although you can’t see it, the body contains a JSON object that has properties for each data property that has failed validation, like this:
+```json
+{
+	"Price":["The field Price must be between 1 and 1000."],
+	"CategoryId":["The field CategoryId must be between 1 and 9.223372036854776E+18."],
+	"SupplierId":["The field SupplierId must be between 1 and 9.223372036854776E+18."]
+}
+```
+
+You can see examples of working with validation messages in Chapter 29 where the validation feature is described in detail.
+
+## Applying the API Controller Attribute
+
+The `ApiController` attribute can be applied to web service controller classes to change the behavior of the model binding and validation features. 
+The use of the `FromBody` attribute to select data from the request body and explicitly check the `ModelState.IsValid` property is not required in controllers that have been decorated with the `ApiController` attribute. 
+Getting data from the body and validating data are required so commonly in web services that they are applied automatically when the attribute is used, restoring the focus of the code in the controller’s action to dealing with the application features, as shown in Listing 19-27.
+
+Listing 19-27. Using ApiController in the ProductsController.cs File in the Controllers Folder
+```cs
+using Microsoft.AspNetCore.Mvc;
+using WebApp.Models;
+
+namespace WebApp.Controllers 
+{
+	[ApiController]
+	[Route("api/[controller]")]
+	public class ProductsController : ControllerBase 
+	{
+		private DataContext context;
+		
+		public ProductsController(DataContext ctx) 
+		{
+			context = ctx;
+		}
+	
+		[HttpGet]
+		public IAsyncEnumerable<Product> GetProducts() 
+		{
+			return context.Products.AsAsyncEnumerable();
+		}
+		
+		[HttpGet("{id}")]
+		public async Task<IActionResult> GetProduct(long id) 
+		{
+			Product? p = await context.Products.FindAsync(id);
+			if (p == null) 
+			{
+				return NotFound();
+			}
+			return Ok(p);
+		}
+		
+		[HttpPost]
+		public async Task<IActionResult> SaveProduct(ProductBindingTarget target) 
+		{
+			Product p = target.ToProduct();
+			await context.Products.AddAsync(p);
+			await context.SaveChangesAsync();
+			return Ok(p);
+		}
+		
+		[HttpPut]
+		public async Task UpdateProduct(Product product) 
+		{
+			context.Update(product);
+			await context.SaveChangesAsync();
+		}
+		
+		[HttpDelete("{id}")]
+		public async Task DeleteProduct(long id) 
+		{
+			context.Products.Remove(new Product() { ProductId = id });
+			await context.SaveChangesAsync();
+		}
+		
+		[HttpGet("redirect")]
+		public IActionResult Redirect() 
+		{
+			return RedirectToAction(nameof(GetProduct), new { Id = 1 });
+		}
+	}
+}
+```
+
+Using the `ApiController` attribute is optional, but it helps produce concise web service controllers.
+
+## Omitting Null Properties
+
+The final change I am going to make in this chapter is to remove the null values from the data returned by the web service. The data model classes contain navigation properties that are used by Entity Framework Core to associate related data in complex queries, as explained in Chapter 20. For the simple queries that are performed in this chapter, no values are assigned to these navigation properties, which means that the client receives properties for which values are never going to be available. 
+   
+To see the problem, use a PowerShell command prompt to run the command shown in Listing 19-28.
+
+Listing 19-28. Sending a GET Request
+`Invoke-WebRequest http://localhost:5000/api/products/1 | Select-Object Content`
+
+The command sends a `GET` request and displays the body of the response from the web service, producing the following output:
+```txt
+Content
+-------
+{"productId":1,"name":"Green Kayak","price":275.00,"categoryId":1,"category":null, "supplierId":1,"supplier":null}
+```
+
+The request was handled by the `GetProduct` action method, and the `category` and `supplier` values in the response will always be null because the action doesn’t ask Entity Framework Core to populate these properties.
+
+### Projecting Selected Properties
+
+The first approach is to return just the properties that the client requires. This gives you complete control over each response, but it can become difficult to manage and confusing for client developers if each action returns a different set of values. Listing 19-29 shows how the `Product` object obtained from the database can be projected so that the navigation properties are omitted.
+
+Listing 19-29. Omitting Properties in the ProductsController.cs File in the Controllers Folder
+```cs
+[HttpGet("{id}")]
+public async Task<IActionResult> GetProduct(long id) 
+{
+	Product? p = await context.Products.FindAsync(id);
+	if (p == null) 
+	{
+		return NotFound();
+	}
+	
+	return Ok(
+		new 
+		{
+			ProductId = p.ProductId, 
+			Name = p.Name,
+			Price = p.Price, 
+			CategoryId = p.CategoryId,
+			SupplierId = p.SupplierId
+		});
+}
+```
+
+The properties that the client requires are selected and added to an object that is passed to the `Ok` method. 
+Restart ASP.NET Core and run the command from Listing 19-28, and you will receive a response that omits the navigation properties and their null values, like this:
+```txt
+Content
+-------
+{"productId":1,"name":"Green Kayak","price":275.00,"categoryId":1,"supplierId":1}
+```
+
+### Configuring the JSON Serializer
+
+The JSON serializer can be configured to omit properties when it serializes objects. One way to configure the serializer is with the `JsonIgnore` attribute, as shown in Listing 19-30.
+
+Listing 19-30. Configuring the Serializer in the Product.cs File in the Models Folder
+```cs
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace WebApp.Models 
+{
+	public class Product 
+	{
+		public long ProductId { get; set; }
+		public string Name { get; set; } = string.Empty;
+		[Column(TypeName = "decimal(8, 2)")]
+		public decimal Price { get; set; }
+		public long CategoryId { get; set; }
+		public Category? Category { get; set; }
+		public long SupplierId { get; set; }
+		[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+		public Supplier? Supplier { get; set; }
+	}
+}
+```
+
+The `Condition` property is assigned a `JsonIgnoreCondition` value, as described in Table 19-8.
+
+Table 19-8. The Values Defined by the JsonIgnoreCondition Enum
+Name|Description
+--|--
+Always|The property will always be ignored when serializing an object.
+Never|The property will always be included when serializing an object.
+WhenWritingDefault|The property will be ignored if the value is `null` or the default value for the property type.
+WhenWritingNull|The property will be ignored if the value is `null`.
+
+The `JsonIgnore` attribute has been applied using the `WhenWritingNull` value, which means that the `Supplier` property will be ignored if its value is `null`. Listing 19-31 updates the controller to use the `Product` class directly in the `GetProduct` action method.
+
+Listing 19-31. Using a Model Class in the ProductController.cs File in the Controllers Folder
+```cs
+[HttpGet("{id}")]
+public async Task<IActionResult> GetProduct(long id) 
+{
+	Product? p = await context.Products.FindAsync(id);
+	if (p == null) 
+	{
+		return NotFound();
+	}
+	return Ok(p);
+}
+```
+
+Restart ASP.NET Core and run the command from Listing 19-28, and you will receive a response that omits the supplier property, like this:
+```txt
+Content
+-------
+{"productId":1,"name":"Green Kayak","price":275.00,"categoryId":1,"category":null, "supplierId":1}
+```
+
+The attribute has to be applied to model classes and is useful when a small number of properties should be ignored, but this can be difficult to manage for more complex data models. 
+A general policy can be defined for serialization using the *options pattern*, as shown in Listing 19-32.
+
+Listing 19-32. Configuring the JSON Serializer in the Program.cs File in the WebApp Folder
+```cs
+using Microsoft.EntityFrameworkCore;
+using WebApp.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Json.Serialization;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<DataContext>(opts => 
+{
+	opts.UseSqlServer(builder.Configuration["ConnectionStrings:ProductConnection"]);
+	opts.EnableSensitiveDataLogging(true);
+});
+
+builder.Services.AddControllers();
+builder.Services.Configure<JsonOptions>(opts => 
+{
+	opts.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+});
+
+var app = builder.Build();
+app.MapControllers();
+app.MapGet("/", () => "Hello World!");
+
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<DataContext>();
+SeedData.SeedDatabase(context);
+
+app.Run();
+```
+
+The JSON serializer is configured using the `JsonSerializerOptions` property of the `JsonOptions` class, and `null` values are managed using the `DefaultIgnoreCondition` property, which is assigned one of the `JsonIgnoreCondition` values described in Table 19-8. 
+
+>![[zICO - Exclamation - 16.png]] The `Always` value does not make sense when using the options pattern and will cause an exception when ASP.NET Core is started.
+
+>![[zICO - Warning - 16.png]] This configuration change affects all JSON responses and should be used with caution, especially if your data model classes use `null` values to impart information to the client.
+
+> ![[zICO - Warning - 16.png]] The `JsonIgnore` attribute can be used to override the default policy, which is useful if you need to include null or default values for a particular property.

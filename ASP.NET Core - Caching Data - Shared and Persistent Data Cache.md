@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Platform/Caching 
+#aspnet_core/Caching 
 
 ---
 

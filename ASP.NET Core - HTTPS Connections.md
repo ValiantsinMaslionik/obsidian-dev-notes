@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Platform/HTTPS
+#aspnet_core/HTTPS
 
 ---
 
