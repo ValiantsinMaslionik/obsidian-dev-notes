@@ -2,6 +2,8 @@
 
 ---
 
+[[#Creating Dependency Chains]]
+
 ## Creating Dependency Chains
 
 When a class is instantiated to resolve a service dependency, its constructor is inspected, and any dependencies on services are resolved. This allows one service to declare a dependency on another service, creating a chain that is resolved automatically. To demonstrate, add a class file called *TimeStamping.cs* to the *Platform/Services* folder with the code shown in Listing 14-32.

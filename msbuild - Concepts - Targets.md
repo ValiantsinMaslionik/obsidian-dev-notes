@@ -9,6 +9,7 @@
 - [Target build order](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022#target-build-order)
 - [SDK-style projects](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022#sdk-style-projects)
 - [Target batching](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022#target-batching)
+	 - [MSBuild batching](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-batching?view=vs-2022)
 ```xml
 <ItemGroup>
 	<Reference Include="System.Core">
@@ -26,5 +27,6 @@
 </Target>
 ```
 - [Incremental builds](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022#incremental-builds)
+	- [Build incrementally](https://learn.microsoft.com/en-us/visualstudio/msbuild/how-to-build-incrementally?view=vs-2022)
 - [Default build targets](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022#default-build-targets)
-[[msbuild - Targets - Standard targets]]
+[[msbuild - Concepts - Targets - Standard targets]]
