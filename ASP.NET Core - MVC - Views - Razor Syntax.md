@@ -1,0 +1,1 @@
+#aspnet_core/razor

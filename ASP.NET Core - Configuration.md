@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Platform/Configuration 
+#aspnet_core/Configuration 
 
 ---
 

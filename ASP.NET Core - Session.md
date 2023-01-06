@@ -1,4 +1,4 @@
-#ASP_NET_CORE/Platform/Sessions
+#aspnet_core/Sessions
 
 ---
 

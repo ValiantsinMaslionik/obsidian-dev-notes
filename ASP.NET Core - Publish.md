@@ -1,4 +1,4 @@
-#ASP_NET_CORE 
+#aspnet_core 
 
 ---
 [.NET application publishing overview](https://learn.microsoft.com/en-us/dotnet/core/deploying/)
