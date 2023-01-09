@@ -14,6 +14,11 @@ Name|Description|URL
 MSBuildLog|Binary and Structured Log Viewer|[Homepage](https://msbuildlog.com/#commandline)
 dotcover|Test coverage analysis from the command line [[Tools - dotcover]]|[Homepage](https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html)
 
+## Web tools
+Name|Description
+--|--
+https://www.websequencediagrams.com|Create sequence diagrams in seconds
+
 ## PowerShell
 
 ### Invoke HTTP method
