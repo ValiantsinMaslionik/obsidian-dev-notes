@@ -1,4 +1,4 @@
-#aspnet_core/razor 
+#aspnet_core/mvc/view
 
 ---
 

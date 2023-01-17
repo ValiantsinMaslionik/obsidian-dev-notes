@@ -1,4 +1,4 @@
-#aspnet_core/MVC 
+#aspnet_core/mvc/view
 
 ---
 
