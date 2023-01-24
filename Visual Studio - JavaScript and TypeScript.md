@@ -1,0 +1,41 @@
+#VisualStudio/js-ts
+
+---
+-   [JavaScript and TypeScript](https://learn.microsoft.com/en-us/visualstudio/javascript/?view=vs-2022)
+
+-   Overview
+    -   [JavaScript in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/javascript/javascript-in-visual-studio?view=vs-2022)
+-   Quickstarts
+    -   [First look at the Visual Studio IDE](https://learn.microsoft.com/en-us/visualstudio/javascript/quickstart-ide-orientation-js?view=vs-2022)
+    -   [Create a React app](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-create-react-app?view=vs-2022)
+    -   [Create an Angular app](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-create-angular-app?view=vs-2022)
+    -   [Create a Vue.js app](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-create-vue-app?view=vs-2022)
+    -   [Create a Vue.js project](https://learn.microsoft.com/en-us/visualstudio/javascript/quickstart-vuejs-with-nodejs?view=vs-2022)
+-   Tutorials
+    -   [Create a Node.js app with Express](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-nodejs?view=vs-2022)
+    -   [Create a Node.js app with React](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx?view=vs-2022)
+    -   [Create an ASP.NET Core app with React](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-react?view=vs-2022)
+    -   [Create an ASP.NET Core app with Angular](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022)
+    -   [Create an ASP.NET Core app with Vue](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-vue?view=vs-2022)
+    -   [Create an ASP.NET Core app with TypeScript](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-aspnet-with-typescript?view=vs-2022)
+	    -  [Create empty ASP.NET Core app with TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+    -   [Publish a Node.js app to Linux App Service](https://learn.microsoft.com/en-us/visualstudio/javascript/publish-nodejs-app-azure?view=vs-2022)
+-   How-to Guides
+    -   Editor
+        -   [Write and edit code](https://learn.microsoft.com/en-us/visualstudio/javascript/write-and-edit-code?view=vs-2022)
+        -   [JavaScript IntelliSense](https://learn.microsoft.com/en-us/visualstudio/ide/javascript-intellisense?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json&view=vs-2022)
+        -   [Linting](https://learn.microsoft.com/en-us/visualstudio/javascript/linting-javascript?view=vs-2022)
+    -   Build
+        -   [Compile TypeScript code using npm](https://learn.microsoft.com/en-us/visualstudio/javascript/compile-typescript-code-npm?view=vs-2022)
+        -   [Compile TypeScript code using NuGet](https://learn.microsoft.com/en-us/visualstudio/javascript/compile-typescript-code-nuget?view=vs-2022)
+    -   [Manage npm packages](https://learn.microsoft.com/en-us/visualstudio/javascript/npm-package-management?view=vs-2022)
+    -   [Develop without projects or solutions ("Open Folder")](https://learn.microsoft.com/en-us/visualstudio/javascript/develop-javascript-code-without-solutions-projects?view=vs-2022)
+    -   [Create a Vue.js application](https://learn.microsoft.com/en-us/visualstudio/javascript/create-application-with-vuejs?view=vs-2022)
+    -   [Use the Node.js interactive REPL](https://learn.microsoft.com/en-us/visualstudio/javascript/nodejs-interactive-repl?view=vs-2022)
+    -   [Debug](https://learn.microsoft.com/en-us/visualstudio/javascript/debug-nodejs?view=vs-2022)
+    -   [Unit testing](https://learn.microsoft.com/en-us/visualstudio/javascript/unit-testing-javascript-with-visual-studio?view=vs-2022)
+-   Reference
+    -   [Properties, React, Angular, Vue](https://learn.microsoft.com/en-us/visualstudio/ide/reference/property-pages-javascript-esproj?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json&view=vs-2022)
+-   Resources
+    -   [package.json configuration](https://learn.microsoft.com/en-us/visualstudio/javascript/configure-packages-with-package-json?view=vs-2022)
+    -   [Visual Studio 2017 and Visual Studio 2019 JavaScript and TypeScript docs repo](https://github.com/Microsoft/JSTSdocs)
