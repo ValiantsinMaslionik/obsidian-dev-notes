@@ -2,6 +2,10 @@
 
 ---
 
+# Documentation
+
+https://create-react-app.dev/docs/documentation-intro
+
 # Creating the app with CRA
 
 Let's create the React and TypeScript app with CRA by carrying out the following steps:
@@ -18,6 +22,12 @@ npm start
 ```
 5. Press `Ctrl + C` to stop the running app and `Y` when you're asked to terminate the job.
 
+- Folder Structure
+https://create-react-app.dev/docs/folder-structure
+- Debugin in the editor
+https://create-react-app.dev/docs/setting-up-your-editor#debugging-in-the-editor
+
+
 # Adding linting to React and TypeScript
 
 So, why are we using Visual Studio Code to develop our React app and not Visual Studio? Well, the overall experience is a little better and faster when developing frontend code with Visual Studio Code.
@@ -33,7 +43,7 @@ code as it is being written.
 
 In the following subsections, we will learn how to configure ESLints rules, as well as how  to configure Visual Studio Code to highlight violations.
 
-## Configuring Visual Studio Code to lint TypeScript code
+### Configuring Visual Studio Code to lint TypeScript code
 
 CRA has already installed ESLint and configured it for us.
 
