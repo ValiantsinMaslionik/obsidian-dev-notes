@@ -1,10 +1,8 @@
-#net/configuration
+#netcore/configuration
 
 ---
 
 https://learn.microsoft.com/en-us/dotnet/api/system.appcontext?view=net-7.0
-
-# NET Core
 
 Name|Description
 --|--

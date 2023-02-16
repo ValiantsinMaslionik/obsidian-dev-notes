@@ -6,7 +6,7 @@
 
 [Microdoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/)
 [Working with Expression Trees In C#](zDOC_NET-Working-with-Expression-Trees.mhtml)
-[[NET - Performance - Reflection|Optimizing Reflection performance]]
+[[NET - Reflection - Performance|Optimizing Reflection performance]]
 
 ## Implementing generic operators
 

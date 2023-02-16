@@ -1,4 +1,4 @@
-#net/cli
+#netcore/cli
 
 ---
 

@@ -1,4 +1,4 @@
-#NET/CrossPlatform
+#netcore/practicies
 
 ---
 

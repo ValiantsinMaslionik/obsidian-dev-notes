@@ -1,4 +1,4 @@
-#NET/SDK
+#netcore/cli
 
 ---
 

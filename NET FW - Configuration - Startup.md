@@ -1,4 +1,4 @@
-#net/configuration
+#netfw/configuration
 
 ---
 

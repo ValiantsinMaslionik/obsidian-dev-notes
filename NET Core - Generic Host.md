@@ -1,4 +1,4 @@
-#net_core/hosting 
+#netcore
 
 ---
 
