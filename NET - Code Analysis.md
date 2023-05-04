@@ -35,5 +35,3 @@ In the same configuration file|The entry that appears later in the file wins. Th
 In two EditorConfig files|The entry in the EditorConfig file that's deeper in the fil
 In two global AnalyzerConfig files|**.NET 5**: A compiler warning is reported and both entries are ignored.<br>**.NET 6 and later versions**: The entry from the file with a higher value for `global_level` takes precedence. If `global_level` isn't explicitly defined and the file is named _.globalconfig_, the `global_level` value defaults to `100`; for all other global AnalyzerConfig files, `global_level` defaults to `0`. If the `global_level` values for the configuration files with conflicting entries are equal, a compiler warning is reported and both entries are ignored.
 In an EditorConfig file and a Global AnalyzerConfig file|The entry in the EditorConfig file wins.
-
-[](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/configuration-files#severity-options)
