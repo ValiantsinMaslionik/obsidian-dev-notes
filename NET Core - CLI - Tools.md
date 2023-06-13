@@ -2,6 +2,8 @@
 
 ---
 
+# Tools
+
 Name|Description|Link
 --|--|--
 dotnet-counters|Investigate performance counters|https://learn.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-counters)
