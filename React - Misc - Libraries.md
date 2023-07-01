@@ -11,3 +11,4 @@ Emotion|A library designed for writing css styles with JavaScript (CSS-in-JS)|ht
 React Router|Client-side routing library for React|https://reactrouter.com/en/main/start/overview
 React Hook Form|Performant, flexible and extensible forms with easy-to-use validation.|https://react-hook-form.com/
 husky|Makes it possible to use githooks as if they are npm scripts|https://typicode.github.io/husky/#/?id=usage
+Redux|A predictable state container for JavaScript apps|https://redux.js.org/introduction/getting-started
