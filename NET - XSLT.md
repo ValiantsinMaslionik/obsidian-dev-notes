@@ -13,3 +13,6 @@
 		-   [Script Blocks Using msxsl:script](https://learn.microsoft.com/en-us/dotnet/standard/data/xml/script-blocks-using-msxsl-script)
 	-   [Recoverable XSLT Errors](https://learn.microsoft.com/en-us/dotnet/standard/data/xml/recoverable-xslt-errors)
 	-   [How to: Transform a Node Fragment](https://learn.microsoft.com/en-us/dotnet/standard/data/xml/how-to-transform-a-node-fragment)
+
+[](http://www.pedautreppe.com/post/Calling-C-function-in-XSL.aspx)Calling C# func in XSL
+[Local Document](zDOC_XSLT_Calling_C#_functions.mhtml)

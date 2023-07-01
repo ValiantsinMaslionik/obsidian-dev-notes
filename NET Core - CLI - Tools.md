@@ -1,6 +1,8 @@
-#net/cli
+#netcore/cli
 
 ---
+
+# Tools
 
 Name|Description|Link
 --|--|--

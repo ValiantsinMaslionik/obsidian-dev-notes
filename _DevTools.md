@@ -18,6 +18,7 @@ dotcover|Test coverage analysis from the command line [[Tools - dotcover]]|[Home
 Name|Description
 --|--
 https://www.websequencediagrams.com|Create sequence diagrams in seconds
+https://www.xmlvalidation.com/|Validate XML (including referenced DTDs) 
 
 ## PowerShell
 

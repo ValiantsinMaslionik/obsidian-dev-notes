@@ -1,4 +1,4 @@
-#NET/Logging
+#netcore/logging
 
 ---
 
