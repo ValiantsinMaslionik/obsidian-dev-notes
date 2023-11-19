@@ -210,7 +210,7 @@ We use *some* and *(not) any* for a number (more that one) or an an amount of so
 .|some|any|examples
 --|--|--|--
 in posiitve sentances|<span style="color:lime">**V**</span>|<span style="color:red">**X**</span>|We've got **some** bananas today.<br>Shh. I'm doing some work.<br>But I want to listen some music.
-in negative sentnces|<span style="color:red">**X**</span>|<span style="color:lime">**V**</span>|We haven't got **any** melons today.<br>There isn't **any** milk in the fridge.<br>I can't give you **any** advice, I'm afraid.
+in negative sentnces|<span style="color:red">**X**</span>|<р>**V**</span>|We haven't got **any** melons today.<br>There isn't **any** milk in the fridge.<br>I can't give you **any** advice, I'm afraid.
 in most questions|<span style="color:red">**X**</span>|<span style="color:lime">**V**</span>|Do you have **any** pears?<br>Is there **any** sugar in the cupboard?
 when you ask for something|<span style="color:lime">**V**</span>|<span style="color:red">**X**</span>|I'd like **some** Spanish oranges, please.<br>Can I have **some** reg grapes?
 when you offer something to someone|<span style="color:lime">**V**</span>|<span style="color:red">**X**</span>|Would you like **some** strawberries?<br>Do you want **some** tea with your lunch?
