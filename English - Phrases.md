@@ -8,3 +8,6 @@ In our lower environments (CI/DEMO/QED) **_we aren’t using_** the prod server,
 \- What's up? (что нового)
 \- Not much (всё по-старому)
 
+Я замещаю коллегу которая ушла в отпуск
+I'm covering for a colleague who's on vacation.
+
