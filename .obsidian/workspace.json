@@ -4,18 +4,249 @@
     "type": "split",
     "children": [
       {
-        "id": "568c99de1020a7fb",
+        "id": "ea22cdd5bc6b15ed",
         "type": "tabs",
         "children": [
           {
-            "id": "8b43f306bfe9b4a7",
+            "id": "8e23928e71abfd10",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.4 Solution Architect Activities.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.4 Solution Architect Activities"
+            }
+          },
+          {
+            "id": "0e201d1059518753",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.5 Architecture Context.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.5 Architecture Context"
+            }
+          },
+          {
+            "id": "272aa61534b6c108",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.6 Architecture Structure.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.6 Architecture Structure"
+            }
+          },
+          {
+            "id": "1f547ecf36a88acd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.7 Architecture and Agile.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.7 Architecture and Agile"
+            }
+          },
+          {
+            "id": "c393884c9e6ee860",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.8 SA at EPAM.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.8 SA at EPAM"
+            }
+          },
+          {
+            "id": "135f56ed07990224",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.6 Architecture Structure.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.6 Architecture Structure"
+            }
+          },
+          {
+            "id": "8dee1ceef30bbeab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI-Assisted Engineering - 1 Task Research.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "AI-Assisted Engineering - 1 Task Research"
+            }
+          },
+          {
+            "id": "a1ebaca59e4c5d83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI-Assisted Engineering - 2 Task Decomposition.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "AI-Assisted Engineering - 2 Task Decomposition"
+            }
+          },
+          {
+            "id": "1a47ae81481a9a93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI-Assisted Engineering - 3 Use Cases and Edge Cases.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "AI-Assisted Engineering - 3 Use Cases and Edge Cases"
+            }
+          },
+          {
+            "id": "75a6a19928ba7387",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI-Assisted Engineering - 4 Code Snippets.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "AI-Assisted Engineering - 4 Code Snippets"
+            }
+          },
+          {
+            "id": "be3e02f1c0903180",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 1.8 SA at EPAM.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 1.8 SA at EPAM"
+            }
+          },
+          {
+            "id": "dab59970050f3c1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 2.1 Basic Terms.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 2.1 Basic Terms"
+            }
+          },
+          {
+            "id": "6b5d1e1821eb803a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 2.2 Business Architecture.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 2.2 Business Architecture"
+            }
+          },
+          {
+            "id": "db42883917c2f0e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 2.3 Business Architecture in the context of Solution Architecture.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 2.3 Business Architecture in the context of Solution Architecture"
+            }
+          },
+          {
+            "id": "271c07c0bb804f49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 2.4 Stakeholders.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 2.4 Stakeholders"
+            }
+          },
+          {
+            "id": "e6267f5bb9d209ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 2.5 Requirements.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 2.5 Requirements"
+            }
+          },
+          {
+            "id": "c22490eb1a898a69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solution Architecture - 2.6 Techniques.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Solution Architecture - 2.6 Techniques"
             }
           }
-        ]
+        ],
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -34,8 +265,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -44,13 +278,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#asp_net_core/plat",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +294,19 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "7c5c5509cf13ac4d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -81,6 +329,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Solution Architecture - 2.6 Techniques.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +337,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Solution Architecture - 2.6 Techniques"
             }
           },
           {
@@ -97,9 +348,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "English - A1-A2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from English - A1-A2"
             }
           },
           {
@@ -109,8 +363,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,30 +376,78 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "English - A1-A2.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of English - A1-A2"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "ribbon": {
-    "mostRecentAction": ""
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
   },
-  "active": "1e714c62c29314d9",
+  "active": "c22490eb1a898a69",
   "lastOpenFiles": [
-    "ASP.NET Core - Session.md",
-    "ASP.NET Core - HTTPS Connections.md",
-    "ASP.NET Core - Error Handling.md",
-    "ASP.NET Core - Filtering Requests Using the Host Header.md",
-    "ASP.NET Core - Configuration - Configuration Service.md",
-    "ASP.NET Core - Configuration - Launch Settings File.md",
-    "ASP.NET Core - Configuration - Environment Service.md",
-    "ASP.NET Core - Configuration - Storing User Secrets.md",
-    "ASP.NET Core - Logging.md",
-    "ASP.NET Core - Static Content and Client-Side Packages.md"
+    "Solution Architecture - 1.6 Architecture Structure.md",
+    "Solution Architecture - 1.5 Architecture Context.md",
+    "Solution Architecture - 1.4 Solution Architect Activities.md",
+    "Solution Architecture - 2.4 Stakeholders.md",
+    "Solution Architecture - 2.1 Basic Terms.md",
+    "Solution Architecture - 2.6 Techniques.md",
+    "Pasted image 20250420212300.png",
+    "Solution Architecture - 2.3 Business Architecture in the context of Solution Architecture.md",
+    "Solution Architecture - 2.2 Business Architecture.md",
+    "Pasted image 20250420205544.png",
+    "Pasted image 20250420204800.png",
+    "Pasted image 20250420204638.png",
+    "Solution Architecture - 2.5 Requirements.md",
+    "Pasted image 20250420204439.png",
+    "Pasted image 20250420204132.png",
+    "Pasted image 20250420203914.png",
+    "Pasted image 20250420195447.png",
+    "Pasted image 20250420195144.png",
+    "Pasted image 20250420194627.png",
+    "Solution Architecture - 1.9 Quiz.md",
+    "Solution Architecture - 1.8 SA at EPAM.md",
+    "AI-Assisted Engineering - 5 Creating a new func or method.md",
+    "AI-Assisted Engineering - 4 Code Snippets.md",
+    "AI-Assisted Engineering - 3 Use Cases and Edge Cases.md",
+    "AI-Assisted Engineering - 2 Task Decomposition.md",
+    "AI-Assisted Engineering - 1 Task Research.md",
+    "Solution Architecture - 1.7 Architecture and Agile.md",
+    "Solution Architecture - 1.1 Intro.md",
+    "Solution Architecture - 1.2 Architecture Landscape.md",
+    "Solution Architecture - 1.3 Solution Architect - Architect elevator.md",
+    "Solution Architecture - 1.3 Solution Architect - EPAM Vision.md",
+    "React - Understanding JSX.md",
+    "React - Strict mode.md",
+    "Security - TLS-SSL.md",
+    "Tools - dotcover.md",
+    "AwsSandbox.zip",
+    "Unconfirmed 80621.crdownload",
+    "Unconfirmed 305523.crdownload",
+    "Unconfirmed 221004.crdownload",
+    "Unconfirmed 93319.crdownload",
+    "Unconfirmed 8240.crdownload",
+    "Unconfirmed 47902.crdownload",
+    "Unconfirmed 798638.crdownload",
+    "Unconfirmed 388348.crdownload",
+    "Unconfirmed 149991.crdownload"
   ]
 }
